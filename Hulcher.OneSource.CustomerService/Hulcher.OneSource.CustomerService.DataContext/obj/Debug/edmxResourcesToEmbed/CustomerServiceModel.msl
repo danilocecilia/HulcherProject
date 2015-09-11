@@ -1,0 +1,2787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OneSourceModelStoreContainer" CdmEntityContainer="CustomerServiceModelContainer">
+    <EntitySetMapping Name="CS_City">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_City">
+        <MappingFragment StoreEntitySet="CS_City">
+          <ScalarProperty Name="CSRecord" ColumnName="CSRecord" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DayLightSaving" ColumnName="DayLightSaving" />
+          <ScalarProperty Name="TimeZone" ColumnName="TimeZone" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Competitor">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Competitor">
+        <MappingFragment StoreEntitySet="CS_Competitor">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Country">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Country">
+        <MappingFragment StoreEntitySet="CS_Country">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Frequency">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Frequency">
+        <MappingFragment StoreEntitySet="CS_Frequency">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Job">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Job">
+        <MappingFragment StoreEntitySet="CS_Job">
+          <ScalarProperty Name="EmergencyResponse" ColumnName="EmergencyResponse" />
+          <ScalarProperty Name="IsBilling" ColumnName="IsBilling" />
+          <ScalarProperty Name="BillingStatus" ColumnName="BillingStatus" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Internal_Tracking" ColumnName="Internal_Tracking" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_JobAction">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_JobAction">
+        <MappingFragment StoreEntitySet="CS_JobAction">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="JobTypeID" ColumnName="JobTypeID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_JobDivision">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_JobDivision">
+        <MappingFragment StoreEntitySet="CS_JobDivision">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="PrimaryDivision" ColumnName="PrimaryDivision" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_JobPhotoReport">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_JobPhotoReport">
+        <MappingFragment StoreEntitySet="CS_JobPhotoReport">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_JobType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_JobType">
+        <MappingFragment StoreEntitySet="CS_JobType">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="JobCategoryID" ColumnName="JobCategoryID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_LocationInfo">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_LocationInfo">
+        <MappingFragment StoreEntitySet="CS_LocationInfo">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Directions" ColumnName="Directions" />
+          <ScalarProperty Name="AlternateName" ColumnName="AlternateName" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="ZipCodeId" ColumnName="ZipCodeId" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_LostJobReason">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_LostJobReason">
+        <MappingFragment StoreEntitySet="CS_LostJobReason">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_PriceType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_PriceType">
+        <MappingFragment StoreEntitySet="CS_PriceType">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Resource">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Resource">
+        <MappingFragment StoreEntitySet="CS_Resource">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_ScopeOfWork">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_ScopeOfWork">
+        <MappingFragment StoreEntitySet="CS_ScopeOfWork">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ScopeChange" ColumnName="ScopeChange" />
+          <ScalarProperty Name="ScopeOfWork" ColumnName="ScopeOfWork" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_State">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_State">
+        <MappingFragment StoreEntitySet="CS_State">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_ZipCode">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_ZipCode">
+        <MappingFragment StoreEntitySet="CS_ZipCode">
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Customer_Contact">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Customer_Contact">
+        <MappingFragment StoreEntitySet="CS_Customer_Contact">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_JobInfo">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_JobInfo">
+        <MappingFragment StoreEntitySet="CS_JobInfo">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="InitialCallDatetimeOffset" ColumnName="InitialCallDatetimeOffset" />
+          <ScalarProperty Name="ProjectManager" ColumnName="ProjectManager" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CustomerSpecificInfo" ColumnName="CustomerSpecificInfo" />
+          <ScalarProperty Name="FrequencyID" ColumnName="FrequencyID" />
+          <ScalarProperty Name="JobActionID" ColumnName="JobActionID" />
+          <ScalarProperty Name="JobTypeID" ColumnName="JobTypeID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="InterimBill" ColumnName="InterimBill" />
+          <ScalarProperty Name="JobCategoryID" ColumnName="JobCategoryID" />
+          <ScalarProperty Name="PriceTypeID" ColumnName="PriceTypeID" />
+          <ScalarProperty Name="InitialCallTime" ColumnName="InitialCallTime" />
+          <ScalarProperty Name="InitialCallDate" ColumnName="InitialCallDate" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_PresetInfo">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_PresetInfo">
+        <MappingFragment StoreEntitySet="CS_PresetInfo">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Instructions" ColumnName="Instructions" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_CustomerInfo">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CustomerInfo">
+        <MappingFragment StoreEntitySet="CS_CustomerInfo">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="PocEmployeeId" ColumnName="PocEmployeeId" />
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="InitialCustomerContactId" ColumnName="InitialCustomerContactId" />
+          <ScalarProperty Name="BillToContactId" ColumnName="BillToContactId" />
+          <ScalarProperty Name="AdditionalContactId" ColumnName="AdditionalContactId" />
+          <ScalarProperty Name="EicContactId" ColumnName="EicContactId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_JobDescription">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_JobDescription">
+        <MappingFragment StoreEntitySet="CS_JobDescription">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Hazmat" ColumnName="Hazmat" />
+          <ScalarProperty Name="STCCInfo" ColumnName="STCCInfo" />
+          <ScalarProperty Name="UnNumber" ColumnName="UnNumber" />
+          <ScalarProperty Name="Lading" ColumnName="Lading" />
+          <ScalarProperty Name="NumberEmpties" ColumnName="NumberEmpties" />
+          <ScalarProperty Name="NumberLoads" ColumnName="NumberLoads" />
+          <ScalarProperty Name="NumberEngines" ColumnName="NumberEngines" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_LostJobInfo">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_LostJobInfo">
+        <MappingFragment StoreEntitySet="CS_LostJobInfo">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="HSIRepEmployeeID" ColumnName="HSIRepEmployeeID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="CompetitorID" ColumnName="CompetitorID" />
+          <ScalarProperty Name="ReasonID" ColumnName="ReasonID" />
+          <ScalarProperty Name="Instructions" ColumnName="Instructions" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_CustomerContract">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CustomerContract">
+        <MappingFragment StoreEntitySet="CS_CustomerContract">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CheckSum" ColumnName="CheckSum" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="AdditionalDetails" ColumnName="AdditionalDetails" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ContractNumber" ColumnName="ContractNumber" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Settings">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Settings">
+        <MappingFragment StoreEntitySet="CS_Settings">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Contact">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Contact">
+        <MappingFragment StoreEntitySet="CS_Contact">
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="IMAddress" ColumnName="IMAddress" />
+          <ScalarProperty Name="Webpage" ColumnName="Webpage" />
+          <ScalarProperty Name="BillFaxCodeArea" ColumnName="BillFaxCodeArea" />
+          <ScalarProperty Name="BillingHomePhoneCodeArea" ColumnName="BillingHomePhoneCodeArea" />
+          <ScalarProperty Name="FaxCodeArea" ColumnName="FaxCodeArea" />
+          <ScalarProperty Name="HomePhoneCodeArea" ColumnName="HomePhoneCodeArea" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="DynamicsContact" ColumnName="DynamicsContact" />
+          <ScalarProperty Name="Attn" ColumnName="Attn" />
+          <ScalarProperty Name="CheckSum" ColumnName="CheckSum" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="BillZip" ColumnName="BillZip" />
+          <ScalarProperty Name="BillThruProject" ColumnName="BillThruProject" />
+          <ScalarProperty Name="BillSalutation" ColumnName="BillSalutation" />
+          <ScalarProperty Name="BillFax" ColumnName="BillFax" />
+          <ScalarProperty Name="BillPhone" ColumnName="BillPhone" />
+          <ScalarProperty Name="BillCountry" ColumnName="BillCountry" />
+          <ScalarProperty Name="BillCity" ColumnName="BillCity" />
+          <ScalarProperty Name="BillState" ColumnName="BillState" />
+          <ScalarProperty Name="BillAttn" ColumnName="BillAttn" />
+          <ScalarProperty Name="BillAddress2" ColumnName="BillAddress2" />
+          <ScalarProperty Name="BillAddress1" ColumnName="BillAddress1" />
+          <ScalarProperty Name="BillName" ColumnName="BillName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Customer">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Customer">
+        <MappingFragment StoreEntitySet="CS_Customer">
+          <ScalarProperty Name="IsCollection" ColumnName="IsCollection" />
+          <ScalarProperty Name="CreditCheck" ColumnName="CreditCheck" />
+          <ScalarProperty Name="OperatorAlert" ColumnName="OperatorAlert" />
+          <ScalarProperty Name="AlertNotification" ColumnName="AlertNotification" />
+          <ScalarProperty Name="IMAddress" ColumnName="IMAddress" />
+          <ScalarProperty Name="Webpage" ColumnName="Webpage" />
+          <ScalarProperty Name="BillFaxCodeArea" ColumnName="BillFaxCodeArea" />
+          <ScalarProperty Name="BillingHomePhoneCodeArea" ColumnName="BillingHomePhoneCodeArea" />
+          <ScalarProperty Name="FaxCodeArea" ColumnName="FaxCodeArea" />
+          <ScalarProperty Name="HomePhoneCodeArea" ColumnName="HomePhoneCodeArea" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="IsGeneralLog" ColumnName="IsGeneralLog" />
+          <ScalarProperty Name="Attn" ColumnName="Attn" />
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Xml" ColumnName="Xml" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="BillZip" ColumnName="BillZip" />
+          <ScalarProperty Name="BillThruProject" ColumnName="BillThruProject" />
+          <ScalarProperty Name="BillSalutation" ColumnName="BillSalutation" />
+          <ScalarProperty Name="BillFax" ColumnName="BillFax" />
+          <ScalarProperty Name="BillPhone" ColumnName="BillPhone" />
+          <ScalarProperty Name="BillCountry" ColumnName="BillCountry" />
+          <ScalarProperty Name="BillCity" ColumnName="BillCity" />
+          <ScalarProperty Name="BillState" ColumnName="BillState" />
+          <ScalarProperty Name="BillAttn" ColumnName="BillAttn" />
+          <ScalarProperty Name="BillAddress2" ColumnName="BillAddress2" />
+          <ScalarProperty Name="BillAddress1" ColumnName="BillAddress1" />
+          <ScalarProperty Name="BillName" ColumnName="BillName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Division">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Division">
+        <MappingFragment StoreEntitySet="CS_Division">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="IsGeneralLog" ColumnName="IsGeneralLog" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="Guid" ColumnName="Guid" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_UpdateDivision" FunctionName="OneSourceModel.Store.CS_SP_UpdateDivision" />
+    <EntitySetMapping Name="CS_EmployeeEmergencyContact">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EmployeeEmergencyContact">
+        <MappingFragment StoreEntitySet="CS_EmployeeEmergencyContact">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="RelationshipDescription" ColumnName="RelationshipDescription" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="MobileAreaCode" ColumnName="MobileAreaCode" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="HomeAreaCode" ColumnName="HomeAreaCode" />
+          <ScalarProperty Name="DayPhone" ColumnName="DayPhone" />
+          <ScalarProperty Name="DayAreaCode" ColumnName="DayAreaCode" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PersonGUID" ColumnName="PersonGUID" />
+          <ScalarProperty Name="PersonEmergencyGUID" ColumnName="PersonEmergencyGUID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_UpdateEmployeeEmergencyContact" FunctionName="OneSourceModel.Store.CS_SP_UpdateEmployeeEmergencyContact" />
+    <FunctionImportMapping FunctionImportName="CS_SP_UpdateEmployee" FunctionName="OneSourceModel.Store.CS_SP_UpdateEmployee" />
+    <EntitySetMapping Name="CS_Employee">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Employee">
+        <MappingFragment StoreEntitySet="CS_Employee">
+          <ScalarProperty Name="IsKeyPerson" ColumnName="IsKeyPerson" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+          <ScalarProperty Name="HasPhoneChanges" ColumnName="HasPhoneChanges" />
+          <ScalarProperty Name="HasAddressChanges" ColumnName="HasAddressChanges" />
+          <ScalarProperty Name="IsDentonPersonal" ColumnName="IsDentonPersonal" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="UserLogin" ColumnName="UserLogin" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="PassportExpireDate" ColumnName="PassportExpireDate" />
+          <ScalarProperty Name="PassportIssueDate" ColumnName="PassportIssueDate" />
+          <ScalarProperty Name="PassportCountryCode" ColumnName="PassportCountryCode" />
+          <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+          <ScalarProperty Name="DriversLicenseExpireDate" ColumnName="DriversLicenseExpireDate" />
+          <ScalarProperty Name="DriversLicenseStateProvinceCode" ColumnName="DriversLicenseStateProvinceCode" />
+          <ScalarProperty Name="DriversLicenseClass" ColumnName="DriversLicenseClass" />
+          <ScalarProperty Name="DriversLicenseNumber" ColumnName="DriversLicenseNumber" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="BusinessCardTitle" ColumnName="BusinessCardTitle" />
+          <ScalarProperty Name="JobCode" ColumnName="JobCode" />
+          <ScalarProperty Name="LocatedDivisionID" ColumnName="LocatedDivisionID" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="CanadaAvailableFlag" ColumnName="CanadaAvailableFlag" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="StateProvinceCode" ColumnName="StateProvinceCode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="OtherPhone" ColumnName="OtherPhone" />
+          <ScalarProperty Name="OtherPhoneAreaCode" ColumnName="OtherPhoneAreaCode" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="MobileAreaCode" ColumnName="MobileAreaCode" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="HomeAreaCode" ColumnName="HomeAreaCode" />
+          <ScalarProperty Name="FaxPhone" ColumnName="FaxPhone" />
+          <ScalarProperty Name="FaxAreaCode" ColumnName="FaxAreaCode" />
+          <ScalarProperty Name="DayPhone" ColumnName="DayPhone" />
+          <ScalarProperty Name="DayAreaCode" ColumnName="DayAreaCode" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+          <ScalarProperty Name="PersonGUID" ColumnName="PersonGUID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_UpdateContact" FunctionName="OneSourceModel.Store.CS_SP_UpdateContact" />
+    <FunctionImportMapping FunctionImportName="CS_SP_UpdateContracts" FunctionName="OneSourceModel.Store.CS_SP_UpdateContracts" />
+    <FunctionImportMapping FunctionImportName="CS_SP_UpdateCustomer" FunctionName="OneSourceModel.Store.CS_SP_UpdateCustomer" />
+    <EntitySetMapping Name="CS_CallLog">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CallLog">
+        <MappingFragment StoreEntitySet="CS_CallLog">
+          <ScalarProperty Name="CalledInByExternal" ColumnName="CalledInByExternal" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="UserCall" ColumnName="UserCall" />
+          <ScalarProperty Name="HasGeneralLog" ColumnName="HasGeneralLog" />
+          <ScalarProperty Name="ShiftTransferLog" ColumnName="ShiftTransferLog" />
+          <ScalarProperty Name="PrimaryCallTypeId" ColumnName="PrimaryCallTypeId" />
+          <ScalarProperty Name="CalledInByCustomer" ColumnName="CalledInByCustomer" />
+          <ScalarProperty Name="CalledInByEmployee" ColumnName="CalledInByEmployee" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Xml" ColumnName="Xml" />
+          <ScalarProperty Name="CallDate" ColumnName="CallDate" />
+          <ScalarProperty Name="CallTypeID" ColumnName="CallTypeID" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Reserve">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Reserve">
+        <MappingFragment StoreEntitySet="CS_Reserve">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="EquipmentTypeID" ColumnName="EquipmentTypeID" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_CallType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CallType">
+        <MappingFragment StoreEntitySet="CS_CallType">
+          <ScalarProperty Name="SendEmail" ColumnName="SendEmail" />
+          <ScalarProperty Name="ShowEquipment" ColumnName="ShowEquipment" />
+          <ScalarProperty Name="ShowEmployee" ColumnName="ShowEmployee" />
+          <ScalarProperty Name="DpiStatus" ColumnName="DpiStatus" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="IsAutomaticProcess" ColumnName="IsAutomaticProcess" />
+          <ScalarProperty Name="CallCriteria" ColumnName="CallCriteria" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Xml" ColumnName="Xml" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_PrimaryCallType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_PrimaryCallType">
+        <MappingFragment StoreEntitySet="CS_PrimaryCallType">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="PrimaryCallTypeCategory" ColumnName="PrimaryCallTypeCategory" />
+          <ScalarProperty Name="PersonsPrimaryCallType" ColumnName="PersonsPrimaryCallType" />
+          <ScalarProperty Name="JobRelated" ColumnName="JobRelated" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_PrimaryCallType_CallType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_PrimaryCallType_CallType">
+        <MappingFragment StoreEntitySet="CS_PrimaryCallType_CallType">
+          <ScalarProperty Name="PrimaryCallTypeID" ColumnName="PrimaryCallTypeID" />
+          <ScalarProperty Name="CallTypeID" ColumnName="CallTypeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_JobPermitType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_JobPermitType">
+        <MappingFragment StoreEntitySet="CS_JobPermitType">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_JobPermit">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_JobPermit">
+        <MappingFragment StoreEntitySet="CS_JobPermit">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="PermitDate" ColumnName="PermitDate" />
+          <ScalarProperty Name="AgentOperatorName" ColumnName="AgentOperatorName" />
+          <ScalarProperty Name="AgencyOperator" ColumnName="AgencyOperator" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_JobCategory">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_JobCategory">
+        <MappingFragment StoreEntitySet="CS_JobCategory">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Hotel">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Hotel">
+        <MappingFragment StoreEntitySet="CS_Hotel">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_EquipmentCombo">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EquipmentCombo">
+        <MappingFragment StoreEntitySet="CS_EquipmentCombo">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="ComboType" ColumnName="ComboType" />
+          <ScalarProperty Name="PrimaryEquipmentID" ColumnName="PrimaryEquipmentID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_CallLogResourceType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CallLogResourceType">
+        <MappingFragment StoreEntitySet="CS_CallLogResourceType">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Subcontractor">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Subcontractor">
+        <MappingFragment StoreEntitySet="CS_Subcontractor">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_EquipmentType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EquipmentType">
+        <MappingFragment StoreEntitySet="CS_EquipmentType">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_UpdateEquipmentAndType" FunctionName="OneSourceModel.Store.CS_SP_UpdateEquipmentAndType" />
+    <EntitySetMapping Name="CS_JobStatus">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_JobStatus">
+        <MappingFragment StoreEntitySet="CS_JobStatus">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_EquipmentPermit">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EquipmentPermit">
+        <MappingFragment StoreEntitySet="CS_EquipmentPermit">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="BuiltDate" ColumnName="BuiltDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="LicenseNumber" ColumnName="LicenseNumber" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="LicensePermitId" ColumnName="LicensePermitId" />
+          <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_UpdateEquipmentPermit" FunctionName="OneSourceModel.Store.CS_SP_UpdateEquipmentPermit" />
+    <EntitySetMapping Name="CS_CallCriteria">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CallCriteria">
+        <MappingFragment StoreEntitySet="CS_CallCriteria">
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="SystemWideLevel" ColumnName="SystemWideLevel" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_CallCriteriaType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CallCriteriaType">
+        <MappingFragment StoreEntitySet="CS_CallCriteriaType">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_CallCriteriaValue">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CallCriteriaValue">
+        <MappingFragment StoreEntitySet="CS_CallCriteriaValue">
+          <ScalarProperty Name="IsAnd" ColumnName="IsAnd" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="CallCriteriaTypeID" ColumnName="CallCriteriaTypeID" />
+          <ScalarProperty Name="CallCriteriaID" ColumnName="CallCriteriaID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Email">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Email">
+        <MappingFragment StoreEntitySet="CS_Email">
+          <ScalarProperty Name="StatusDate" ColumnName="StatusDate" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Receipts" ColumnName="Receipts" />
+          <ScalarProperty Name="Sender" ColumnName="Sender" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_CallLogCallCriteriaEmail">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CallLogCallCriteriaEmail">
+        <MappingFragment StoreEntitySet="CS_CallLogCallCriteriaEmail">
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="StatusDate" ColumnName="StatusDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CallLogID" ColumnName="CallLogID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Job_JobStatus">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Job_JobStatus">
+        <MappingFragment StoreEntitySet="CS_Job_JobStatus">
+          <ScalarProperty Name="JobCloseDate" ColumnName="JobCloseDate" />
+          <ScalarProperty Name="JobStartDate" ColumnName="JobStartDate" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="JobStatusId" ColumnName="JobStatusId" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_ListJobsBySearchCriteria" FunctionName="OneSourceModel.Store.CS_SP_ListJobsBySearchCriteria" />
+    <EntitySetMapping Name="CS_FirstAlert">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_FirstAlert">
+        <MappingFragment StoreEntitySet="CS_FirstAlert">
+          <ScalarProperty Name="CopyToGeneralLog" ColumnName="CopyToGeneralLog" />
+          <ScalarProperty Name="CallLogID" ColumnName="CallLogID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="PoliceReportNumber" ColumnName="PoliceReportNumber" />
+          <ScalarProperty Name="PoliceAgency" ColumnName="PoliceAgency" />
+          <ScalarProperty Name="HasPoliceReport" ColumnName="HasPoliceReport" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="CompletedByEmployeeID" ColumnName="CompletedByEmployeeID" />
+          <ScalarProperty Name="ReportedBy" ColumnName="ReportedBy" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="InChargeEmployeeID" ColumnName="InChargeEmployeeID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_FirstAlertFirstAlertType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_FirstAlertFirstAlertType">
+        <MappingFragment StoreEntitySet="CS_FirstAlertFirstAlertType">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="FirstAlertTypeID" ColumnName="FirstAlertTypeID" />
+          <ScalarProperty Name="FirstAlertID" ColumnName="FirstAlertID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_FirstAlertType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_FirstAlertType">
+        <MappingFragment StoreEntitySet="CS_FirstAlertType">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_FirstAlertPerson">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_FirstAlertPerson">
+        <MappingFragment StoreEntitySet="CS_FirstAlertPerson">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="DrugScreenRequired" ColumnName="DrugScreenRequired" />
+          <ScalarProperty Name="PolicyNumber" ColumnName="PolicyNumber" />
+          <ScalarProperty Name="InsuranceCompany" ColumnName="InsuranceCompany" />
+          <ScalarProperty Name="DriversLicenseAddress" ColumnName="DriversLicenseAddress" />
+          <ScalarProperty Name="DriversLicenseZipcodeID" ColumnName="DriversLicenseZipcodeID" />
+          <ScalarProperty Name="DriversLicenseCityID" ColumnName="DriversLicenseCityID" />
+          <ScalarProperty Name="DriversLicenseStateID" ColumnName="DriversLicenseStateID" />
+          <ScalarProperty Name="DriversLicenseCountryID" ColumnName="DriversLicenseCountryID" />
+          <ScalarProperty Name="DriversLicenseNumber" ColumnName="DriversLicenseNumber" />
+          <ScalarProperty Name="HospitalPhoneNumber" ColumnName="HospitalPhoneNumber" />
+          <ScalarProperty Name="HospitalZipcodeID" ColumnName="HospitalZipcodeID" />
+          <ScalarProperty Name="HospitalCityID" ColumnName="HospitalCityID" />
+          <ScalarProperty Name="HospitalStateID" ColumnName="HospitalStateID" />
+          <ScalarProperty Name="HospitalCountryID" ColumnName="HospitalCountryID" />
+          <ScalarProperty Name="HospitalName" ColumnName="HospitalName" />
+          <ScalarProperty Name="DoctorsPhoneNumber" ColumnName="DoctorsPhoneNumber" />
+          <ScalarProperty Name="DoctorsZipcodeID" ColumnName="DoctorsZipcodeID" />
+          <ScalarProperty Name="DoctorsCityID" ColumnName="DoctorsCityID" />
+          <ScalarProperty Name="DoctorsStateID" ColumnName="DoctorsStateID" />
+          <ScalarProperty Name="DoctorsCountryID" ColumnName="DoctorsCountryID" />
+          <ScalarProperty Name="DoctorsName" ColumnName="DoctorsName" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="MedicalSeverity" ColumnName="MedicalSeverity" />
+          <ScalarProperty Name="InjuryBodyPart" ColumnName="InjuryBodyPart" />
+          <ScalarProperty Name="InjuryNature" ColumnName="InjuryNature" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ZipcodeID" ColumnName="ZipcodeID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="VehiclePosition" ColumnName="VehiclePosition" />
+          <ScalarProperty Name="FirstAlertVehicleID" ColumnName="FirstAlertVehicleID" />
+          <ScalarProperty Name="IsHulcherEmployee" ColumnName="IsHulcherEmployee" />
+          <ScalarProperty Name="FirstAlertID" ColumnName="FirstAlertID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_FirstAlertVehicle">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_FirstAlertVehicle">
+        <MappingFragment StoreEntitySet="CS_FirstAlertVehicle">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="EstimatedCost" ColumnName="EstimatedCost" />
+          <ScalarProperty Name="Damage" ColumnName="Damage" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="IsHulcherVehicle" ColumnName="IsHulcherVehicle" />
+          <ScalarProperty Name="FirstAlertID" ColumnName="FirstAlertID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_FirstAlertDivision">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_FirstAlertDivision">
+        <MappingFragment StoreEntitySet="CS_FirstAlertDivision">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="FirstAlertID" ColumnName="FirstAlertID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_EquipmentCoverage">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EquipmentCoverage">
+        <MappingFragment StoreEntitySet="CS_EquipmentCoverage">
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CoverageEndDate" ColumnName="CoverageEndDate" />
+          <ScalarProperty Name="CoverageStartDate" ColumnName="CoverageStartDate" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_EquipmentDownHistory">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EquipmentDownHistory">
+        <MappingFragment StoreEntitySet="CS_EquipmentDownHistory">
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DownHistoryEndDate" ColumnName="DownHistoryEndDate" />
+          <ScalarProperty Name="DownHistoryStartDate" ColumnName="DownHistoryStartDate" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_EquipmentWhiteLight">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EquipmentWhiteLight">
+        <MappingFragment StoreEntitySet="CS_EquipmentWhiteLight">
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="WhiteLightEndDate" ColumnName="WhiteLightEndDate" />
+          <ScalarProperty Name="WhiteLightStartDate" ColumnName="WhiteLightStartDate" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_EquipmentPermitEmail">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EquipmentPermitEmail">
+        <MappingFragment StoreEntitySet="CS_EquipmentPermitEmail">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="EquipmentPermitID" ColumnName="EquipmentPermitID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_DPIRate">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_DPIRate">
+        <MappingFragment StoreEntitySet="CS_DPIRate">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_SpecialPricing">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_SpecialPricing">
+        <MappingFragment StoreEntitySet="CS_SpecialPricing">
+          <ScalarProperty Name="BidNumber" ColumnName="BidNumber" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="LumpsumDuration" ColumnName="LumpsumDuration" />
+          <ScalarProperty Name="LumpsumValuePerDay" ColumnName="LumpsumValuePerDay" />
+          <ScalarProperty Name="LumpsumValue" ColumnName="LumpsumValue" />
+          <ScalarProperty Name="OverallJobDiscount" ColumnName="OverallJobDiscount" />
+          <ScalarProperty Name="ApprovingRVPEmployeeID" ColumnName="ApprovingRVPEmployeeID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_DPIManualSpecialPricing">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_DPIManualSpecialPricing">
+        <MappingFragment StoreEntitySet="CS_DPIManualSpecialPricing">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="QtdHrs" ColumnName="QtdHrs" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DPIId" ColumnName="DPIId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_DPISpecialPricing">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_DPISpecialPricing">
+        <MappingFragment StoreEntitySet="CS_DPISpecialPricing">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="LumpSumDuration" ColumnName="LumpSumDuration" />
+          <ScalarProperty Name="LumpSumValuePerDay" ColumnName="LumpSumValuePerDay" />
+          <ScalarProperty Name="LumpSumValue" ColumnName="LumpSumValue" />
+          <ScalarProperty Name="OverallJobDiscount" ColumnName="OverallJobDiscount" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="DPIID" ColumnName="DPIID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_DPI">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_DPI">
+        <MappingFragment StoreEntitySet="CS_DPI">
+          <ScalarProperty Name="FirstATA" ColumnName="FirstATA" />
+          <ScalarProperty Name="FirstETA" ColumnName="FirstETA" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Calculate" ColumnName="Calculate" />
+          <ScalarProperty Name="IsContinuing" ColumnName="IsContinuing" />
+          <ScalarProperty Name="CalculationStatus" ColumnName="CalculationStatus" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="ProcessStatusDate" ColumnName="ProcessStatusDate" />
+          <ScalarProperty Name="ProcessStatus" ColumnName="ProcessStatus" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_ResourceAllocationDetails">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_ResourceAllocationDetails">
+        <MappingFragment StoreEntitySet="CS_ResourceAllocationDetails">
+          <ScalarProperty Name="FieldPO" ColumnName="FieldPO" />
+          <ScalarProperty Name="SubContractorInfo" ColumnName="SubContractorInfo" />
+          <ScalarProperty Name="IsSubContractor" ColumnName="IsSubContractor" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_EmployeeCoverage">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EmployeeCoverage">
+        <MappingFragment StoreEntitySet="CS_EmployeeCoverage">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CoverageEndDate" ColumnName="CoverageEndDate" />
+          <ScalarProperty Name="CoverageStartDate" ColumnName="CoverageStartDate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_EmployeeOffCallHistory">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EmployeeOffCallHistory">
+        <MappingFragment StoreEntitySet="CS_EmployeeOffCallHistory">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="OffCallReturnTime" ColumnName="OffCallReturnTime" />
+          <ScalarProperty Name="OffCallEndDate" ColumnName="OffCallEndDate" />
+          <ScalarProperty Name="OffCallStartDate" ColumnName="OffCallStartDate" />
+          <ScalarProperty Name="ProxyEmployeeID" ColumnName="ProxyEmployeeID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_ConflictedEquipmentCombos">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_ConflictedEquipmentCombos">
+        <MappingFragment StoreEntitySet="CS_View_ConflictedEquipmentCombos">
+          <ScalarProperty Name="ComboName" ColumnName="ComboName" />
+          <ScalarProperty Name="ComboID" ColumnName="ComboID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_DPIInformation">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_DPIInformation">
+        <MappingFragment StoreEntitySet="CS_View_DPIInformation">
+          <ScalarProperty Name="WasActiveToday" ColumnName="WasActiveToday" />
+          <ScalarProperty Name="DPIResourceTotal" ColumnName="DPIResourceTotal" />
+          <ScalarProperty Name="EmployeePosition" ColumnName="EmployeePosition" />
+          <ScalarProperty Name="EmployeeDivision" ColumnName="EmployeeDivision" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EquipmentDivision" ColumnName="EquipmentDivision" />
+          <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="EquipmentIsPrimaryEquipment" ColumnName="EquipmentIsPrimaryEquipment" />
+          <ScalarProperty Name="EquipmentComboNumber" ColumnName="EquipmentComboNumber" />
+          <ScalarProperty Name="EquipmentUnitNumber" ColumnName="EquipmentUnitNumber" />
+          <ScalarProperty Name="DPIDate" ColumnName="DPIDate" />
+          <ScalarProperty Name="DPITotal" ColumnName="DPITotal" />
+          <ScalarProperty Name="DPIIsContinuing" ColumnName="DPIIsContinuing" />
+          <ScalarProperty Name="DPICalculationStatus" ColumnName="DPICalculationStatus" />
+          <ScalarProperty Name="DPIApprovedByName" ColumnName="DPIApprovedByName" />
+          <ScalarProperty Name="DPIApprovedById" ColumnName="DPIApprovedById" />
+          <ScalarProperty Name="DPIProcessStatusDate" ColumnName="DPIProcessStatusDate" />
+          <ScalarProperty Name="DPIProcessStatus" ColumnName="DPIProcessStatus" />
+          <ScalarProperty Name="NumberLoads" ColumnName="NumberLoads" />
+          <ScalarProperty Name="NumberEmpties" ColumnName="NumberEmpties" />
+          <ScalarProperty Name="NumberEngines" ColumnName="NumberEngines" />
+          <ScalarProperty Name="JobStartDate" ColumnName="JobStartDate" />
+          <ScalarProperty Name="JobStatusID" ColumnName="JobStatusID" />
+          <ScalarProperty Name="JobAction" ColumnName="JobAction" />
+          <ScalarProperty Name="JobLocation" ColumnName="JobLocation" />
+          <ScalarProperty Name="JobCustomerName" ColumnName="JobCustomerName" />
+          <ScalarProperty Name="JobDivision" ColumnName="JobDivision" />
+          <ScalarProperty Name="JobTypeDescription" ColumnName="JobTypeDescription" />
+          <ScalarProperty Name="PriceTypeAcronym" ColumnName="PriceTypeAcronym" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="DPIID" ColumnName="DPIID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_DPIReport">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_DPIReport">
+        <MappingFragment StoreEntitySet="CS_View_DPIReport">
+          <ScalarProperty Name="JobStatusId" ColumnName="JobStatusId" />
+          <ScalarProperty Name="WasActiveToday" ColumnName="WasActiveToday" />
+          <ScalarProperty Name="RevenueTotal" ColumnName="RevenueTotal" />
+          <ScalarProperty Name="JobTypeDescription" ColumnName="JobTypeDescription" />
+          <ScalarProperty Name="PriceTypeAcronym" ColumnName="PriceTypeAcronym" />
+          <ScalarProperty Name="ATA" ColumnName="ATA" />
+          <ScalarProperty Name="ETA" ColumnName="ETA" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Loads" ColumnName="Loads" />
+          <ScalarProperty Name="Empties" ColumnName="Empties" />
+          <ScalarProperty Name="Engine" ColumnName="Engine" />
+          <ScalarProperty Name="JobAction" ColumnName="JobAction" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="EQ" ColumnName="EQ" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="IsContinuing" ColumnName="IsContinuing" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="DPIID" ColumnName="DPIID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_Employee_CallLogInfo">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_Employee_CallLogInfo">
+        <MappingFragment StoreEntitySet="CS_View_Employee_CallLogInfo">
+          <ScalarProperty Name="EmployeeNickname" ColumnName="EmployeeNickname" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="VMX" ColumnName="VMX" />
+          <ScalarProperty Name="Advise_Note" ColumnName="Advise Note" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="EmployeeFirstName" ColumnName="EmployeeFirstName" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_EmployeeInfo">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_EmployeeInfo">
+        <MappingFragment StoreEntitySet="CS_View_EmployeeInfo">
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="JobTypeDescription" ColumnName="JobTypeDescription" />
+          <ScalarProperty Name="PriceTypeAcronym" ColumnName="PriceTypeAcronym" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="Assigned" ColumnName="Assigned" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_FirstAlertReport">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_FirstAlertReport">
+        <MappingFragment StoreEntitySet="CS_View_FirstAlertReport">
+          <ScalarProperty Name="FirstAlertVehicleID" ColumnName="FirstAlertVehicleID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="IsHulcherVehicle" ColumnName="IsHulcherVehicle" />
+          <ScalarProperty Name="FirstAlertId" ColumnName="FirstAlertId" />
+          <ScalarProperty Name="InjuryBodyPart" ColumnName="InjuryBodyPart" />
+          <ScalarProperty Name="InjuryNature" ColumnName="InjuryNature" />
+          <ScalarProperty Name="VehiclePosition" ColumnName="VehiclePosition" />
+          <ScalarProperty Name="DriversLicenseNumber" ColumnName="DriversLicenseNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DrugScreenRequired" ColumnName="DrugScreenRequired" />
+          <ScalarProperty Name="PoliceReportNumber" ColumnName="PoliceReportNumber" />
+          <ScalarProperty Name="PoliceAgency" ColumnName="PoliceAgency" />
+          <ScalarProperty Name="HasPoliceReport" ColumnName="HasPoliceReport" />
+          <ScalarProperty Name="PolicyNumber" ColumnName="PolicyNumber" />
+          <ScalarProperty Name="InsuranceCompany" ColumnName="InsuranceCompany" />
+          <ScalarProperty Name="EstimatedCost" ColumnName="EstimatedCost" />
+          <ScalarProperty Name="Damage" ColumnName="Damage" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="VehicleModel" ColumnName="VehicleModel" />
+          <ScalarProperty Name="VehicleMake" ColumnName="VehicleMake" />
+          <ScalarProperty Name="HulcherEquipmentModel" ColumnName="HulcherEquipmentModel" />
+          <ScalarProperty Name="HulcherEquipmentMake" ColumnName="HulcherEquipmentMake" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="UnitNumber" ColumnName="UnitNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_FirstAlertReportHulcherVehicles">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_FirstAlertReportHulcherVehicles">
+        <MappingFragment StoreEntitySet="CS_View_FirstAlertReportHulcherVehicles">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="FirstAlertId" ColumnName="FirstAlertId" />
+          <ScalarProperty Name="PoliceReportNumber" ColumnName="PoliceReportNumber" />
+          <ScalarProperty Name="PoliceAgency" ColumnName="PoliceAgency" />
+          <ScalarProperty Name="HasPoliceReport" ColumnName="HasPoliceReport" />
+          <ScalarProperty Name="EstimatedCost" ColumnName="EstimatedCost" />
+          <ScalarProperty Name="Damage" ColumnName="Damage" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_FirstAlertReportOtherVehicle">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_FirstAlertReportOtherVehicle">
+        <MappingFragment StoreEntitySet="CS_View_FirstAlertReportOtherVehicle">
+          <ScalarProperty Name="DriversLicenseNumber" ColumnName="DriversLicenseNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="IsHulcherVehicle" ColumnName="IsHulcherVehicle" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="FirstAlertId" ColumnName="FirstAlertId" />
+          <ScalarProperty Name="VehiclePosition" ColumnName="VehiclePosition" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Damage" ColumnName="Damage" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="FirstAlertVehicleId" ColumnName="FirstAlertVehicleId" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_JobCallLog">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_JobCallLog">
+        <MappingFragment StoreEntitySet="CS_View_JobCallLog">
+          <ScalarProperty Name="IsAutomaticProcess" ColumnName="IsAutomaticProcess" />
+          <ScalarProperty Name="JobCreationDate" ColumnName="JobCreationDate" />
+          <ScalarProperty Name="JobTypeDescription" ColumnName="JobTypeDescription" />
+          <ScalarProperty Name="PriceTypeAcronym" ColumnName="PriceTypeAcronym" />
+          <ScalarProperty Name="IsGeneralLog" ColumnName="IsGeneralLog" />
+          <ScalarProperty Name="ShiftTransferLog" ColumnName="ShiftTransferLog" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="JobStartDate" ColumnName="JobStartDate" />
+          <ScalarProperty Name="JobStatusId" ColumnName="JobStatusId" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModifiedById" ColumnName="ModifiedById" />
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CallDate" ColumnName="CallDate" />
+          <ScalarProperty Name="CalledInBy" ColumnName="CalledInBy" />
+          <ScalarProperty Name="CallTypeId" ColumnName="CallTypeId" />
+          <ScalarProperty Name="CallType" ColumnName="CallType" />
+          <ScalarProperty Name="CallId" ColumnName="CallId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_ReserveEquipment">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_ReserveEquipment">
+        <MappingFragment StoreEntitySet="CS_View_ReserveEquipment">
+          <ScalarProperty Name="Available" ColumnName="Available" />
+          <ScalarProperty Name="Assigned" ColumnName="Assigned" />
+          <ScalarProperty Name="Reserve" ColumnName="Reserve" />
+          <ScalarProperty Name="EquipmentType" ColumnName="EquipmentType" />
+          <ScalarProperty Name="EquipmentTypeID" ColumnName="EquipmentTypeID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_ReserveList">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_ReserveList">
+        <MappingFragment StoreEntitySet="CS_View_ReserveList">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Equipment" ColumnName="Equipment" />
+          <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Available" ColumnName="Available" />
+          <ScalarProperty Name="NumberOfReserves" ColumnName="NumberOfReserves" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_SecondaryEquipmentInfo">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_SecondaryEquipmentInfo">
+        <MappingFragment StoreEntitySet="CS_View_SecondaryEquipmentInfo">
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="IsPrimary" ColumnName="IsPrimary" />
+          <ScalarProperty Name="ComboID" ColumnName="ComboID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="CallLogID" ColumnName="CallLogID" />
+          <ScalarProperty Name="JobLocation" ColumnName="JobLocation" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="DivisionState" ColumnName="DivisionState" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="EquipmentStatus" ColumnName="EquipmentStatus" />
+          <ScalarProperty Name="Descriptor" ColumnName="Descriptor" />
+          <ScalarProperty Name="UnitNumber" ColumnName="UnitNumber" />
+          <ScalarProperty Name="IsCombo" ColumnName="IsCombo" />
+          <ScalarProperty Name="ComboName" ColumnName="ComboName" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Region">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Region">
+        <MappingFragment StoreEntitySet="CS_Region">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="RegionalVpID" ColumnName="RegionalVpID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Region_Division">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Region_Division">
+        <MappingFragment StoreEntitySet="CS_Region_Division">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_EquipmentInfo">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_EquipmentInfo">
+        <MappingFragment StoreEntitySet="CS_View_EquipmentInfo">
+          <ScalarProperty Name="IsWhiteLight" ColumnName="IsWhiteLight" />
+          <ScalarProperty Name="Seasonal" ColumnName="Seasonal" />
+          <ScalarProperty Name="CoverageDivisionStateName" ColumnName="CoverageDivisionStateName" />
+          <ScalarProperty Name="DivisionStateName" ColumnName="DivisionStateName" />
+          <ScalarProperty Name="DisplayInResourceAllocation" ColumnName="DisplayInResourceAllocation" />
+          <ScalarProperty Name="PermitExpired" ColumnName="PermitExpired" />
+          <ScalarProperty Name="DivisionConflicted" ColumnName="DivisionConflicted" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="HeavyEquipment" ColumnName="HeavyEquipment" />
+          <ScalarProperty Name="JobTypeDescription" ColumnName="JobTypeDescription" />
+          <ScalarProperty Name="PriceTypeAcronym" ColumnName="PriceTypeAcronym" />
+          <ScalarProperty Name="IsPrimary" ColumnName="IsPrimary" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="CallLogID" ColumnName="CallLogID" />
+          <ScalarProperty Name="CallLogJobID" ColumnName="CallLogJobID" />
+          <ScalarProperty Name="JobLocation" ColumnName="JobLocation" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="JobStatus" ColumnName="JobStatus" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CoverageDivisionState" ColumnName="CoverageDivisionState" />
+          <ScalarProperty Name="DivisionState" ColumnName="DivisionState" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="CoverageDivisionID" ColumnName="CoverageDivisionID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="EquipmentStatus" ColumnName="EquipmentStatus" />
+          <ScalarProperty Name="Descriptor" ColumnName="Descriptor" />
+          <ScalarProperty Name="UnitNumber" ColumnName="UnitNumber" />
+          <ScalarProperty Name="EquipmentTypeID" ColumnName="EquipmentTypeID" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ComboType" ColumnName="ComboType" />
+          <ScalarProperty Name="ComboName" ColumnName="ComboName" />
+          <ScalarProperty Name="ComboID" ColumnName="ComboID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_PhoneNumber">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_PhoneNumber">
+        <MappingFragment StoreEntitySet="CS_PhoneNumber">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="PhoneTypeID" ColumnName="PhoneTypeID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_PhoneType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_PhoneType">
+        <MappingFragment StoreEntitySet="CS_PhoneType">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificatedBy" ColumnName="ModificatedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Request">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Request">
+        <MappingFragment StoreEntitySet="CS_Request">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsCustomer" ColumnName="IsCustomer" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_GetInitialAdviseNote" FunctionName="OneSourceModel.Store.CS_SP_GetInitialAdviseNote" />
+    <EntitySetMapping Name="CS_CustomerSpecificInfoType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CustomerSpecificInfoType">
+        <MappingFragment StoreEntitySet="CS_CustomerSpecificInfoType">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_GetJobCallLog" FunctionName="OneSourceModel.Store.CS_SP_GetJobCallLog" />
+    <EntitySetMapping Name="CS_CustomerAlias">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CustomerAlias">
+        <MappingFragment StoreEntitySet="CS_CustomerAlias">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Job_LocalEquipmentType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Job_LocalEquipmentType">
+        <MappingFragment StoreEntitySet="CS_Job_LocalEquipmentType">
+          <ScalarProperty Name="SpecificEquipment" ColumnName="SpecificEquipment" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="LocalEquipmentTypeID" ColumnName="LocalEquipmentTypeID" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_LocalEquipmentType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_LocalEquipmentType">
+        <MappingFragment StoreEntitySet="CS_LocalEquipmentType">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Equipment">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Equipment">
+        <MappingFragment StoreEntitySet="CS_Equipment">
+          <ScalarProperty Name="Seasonal" ColumnName="Seasonal" />
+          <ScalarProperty Name="DisplayInResourceAllocation" ColumnName="DisplayInResourceAllocation" />
+          <ScalarProperty Name="HeavyEquipment" ColumnName="HeavyEquipment" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="AttachUndercutter" ColumnName="AttachUndercutter" />
+          <ScalarProperty Name="AttachTieTamper" ColumnName="AttachTieTamper" />
+          <ScalarProperty Name="AttachTieInserter" ColumnName="AttachTieInserter" />
+          <ScalarProperty Name="AttachTieClamp" ColumnName="AttachTieClamp" />
+          <ScalarProperty Name="AttachSlipSheet" ColumnName="AttachSlipSheet" />
+          <ScalarProperty Name="AttachPileDriver" ColumnName="AttachPileDriver" />
+          <ScalarProperty Name="AttachPanelBoss" ColumnName="AttachPanelBoss" />
+          <ScalarProperty Name="RegisteredState" ColumnName="RegisteredState" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="EquipmentFunction" ColumnName="EquipmentFunction" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="BodyType" ColumnName="BodyType" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="EquipmentTypeID" ColumnName="EquipmentTypeID" />
+          <ScalarProperty Name="ComboID" ColumnName="ComboID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_CallLog_LocalEquipmentType">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CallLog_LocalEquipmentType">
+        <MappingFragment StoreEntitySet="CS_CallLog_LocalEquipmentType">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="LocalEquipmentTypeID" ColumnName="LocalEquipmentTypeID" />
+          <ScalarProperty Name="CallLogID" ColumnName="CallLogID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_DPIResource">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_DPIResource">
+        <MappingFragment StoreEntitySet="CS_DPIResource">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="ModifiedHotelRate" ColumnName="ModifiedHotelRate" />
+          <ScalarProperty Name="HotelRate" ColumnName="HotelRate" />
+          <ScalarProperty Name="HasHotel" ColumnName="HasHotel" />
+          <ScalarProperty Name="MealRate" ColumnName="MealRate" />
+          <ScalarProperty Name="MealQuantity" ColumnName="MealQuantity" />
+          <ScalarProperty Name="PermitRate" ColumnName="PermitRate" />
+          <ScalarProperty Name="PermitQuantity" ColumnName="PermitQuantity" />
+          <ScalarProperty Name="ModifiedRate" ColumnName="ModifiedRate" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="ContinuingHours" ColumnName="ContinuingHours" />
+          <ScalarProperty Name="IsContinuing" ColumnName="IsContinuing" />
+          <ScalarProperty Name="ModifiedHours" ColumnName="ModifiedHours" />
+          <ScalarProperty Name="Hours" ColumnName="Hours" />
+          <ScalarProperty Name="CalculationStatus" ColumnName="CalculationStatus" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="DPIID" ColumnName="DPIID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_ManagersLocation">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_ManagersLocation">
+        <MappingFragment StoreEntitySet="CS_View_ManagersLocation">
+          <ScalarProperty Name="JobStatus" ColumnName="JobStatus" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="LastCallTypeDescription" ColumnName="LastCallTypeDescription" />
+          <ScalarProperty Name="LastCallTypeID" ColumnName="LastCallTypeID" />
+          <ScalarProperty Name="LastCallJobID" ColumnName="LastCallJobID" />
+          <ScalarProperty Name="LastCallLogDate" ColumnName="LastCallLogDate" />
+          <ScalarProperty Name="LastCallLogID" ColumnName="LastCallLogID" />
+          <ScalarProperty Name="LastHotelNote" ColumnName="LastHotelNote" />
+          <ScalarProperty Name="LastHotelXML" ColumnName="LastHotelXML" />
+          <ScalarProperty Name="EmployeeNickName" ColumnName="EmployeeNickName" />
+          <ScalarProperty Name="EmployeeFirstName" ColumnName="EmployeeFirstName" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_DivisionPhoneNumber">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_DivisionPhoneNumber">
+        <MappingFragment StoreEntitySet="CS_DivisionPhoneNumber">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="PhoneTypeID" ColumnName="PhoneTypeID" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_LocalDivision">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_LocalDivision">
+        <MappingFragment StoreEntitySet="CS_LocalDivision">
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ZipCodeID" ColumnName="ZipCodeID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_Customer_Contact_Phone">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_Customer_Contact_Phone">
+        <MappingFragment StoreEntitySet="CS_View_Customer_Contact_Phone">
+          <ScalarProperty Name="CustomerAdditionalPhoneType" ColumnName="CustomerAdditionalPhoneType" />
+          <ScalarProperty Name="ContactAdditionalNumber" ColumnName="ContactAdditionalNumber" />
+          <ScalarProperty Name="ContactBillFax" ColumnName="ContactBillFax" />
+          <ScalarProperty Name="ContactBillFaxCodeArea" ColumnName="ContactBillFaxCodeArea" />
+          <ScalarProperty Name="ContactBillPhone" ColumnName="ContactBillPhone" />
+          <ScalarProperty Name="ContactBillPhoneCodeArea" ColumnName="ContactBillPhoneCodeArea" />
+          <ScalarProperty Name="ContactFax" ColumnName="ContactFax" />
+          <ScalarProperty Name="ContactFaxCodeArea" ColumnName="ContactFaxCodeArea" />
+          <ScalarProperty Name="ContactHomePhone" ColumnName="ContactHomePhone" />
+          <ScalarProperty Name="ContactHomePhoneCodeArea" ColumnName="ContactHomePhoneCodeArea" />
+          <ScalarProperty Name="ContactAlias" ColumnName="ContactAlias" />
+          <ScalarProperty Name="ContactLastName" ColumnName="ContactLastName" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="ContactAttn" ColumnName="ContactAttn" />
+          <ScalarProperty Name="ContactDynamics" ColumnName="ContactDynamics" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="CustomerBillFax" ColumnName="CustomerBillFax" />
+          <ScalarProperty Name="CustomerBillFaxCodeArea" ColumnName="CustomerBillFaxCodeArea" />
+          <ScalarProperty Name="CustomerFax" ColumnName="CustomerFax" />
+          <ScalarProperty Name="CustomerFaxCodeArea" ColumnName="CustomerFaxCodeArea" />
+          <ScalarProperty Name="CustomerBillPhone" ColumnName="CustomerBillPhone" />
+          <ScalarProperty Name="CustomerBillPhoneCodeArea" ColumnName="CustomerBillPhoneCodeArea" />
+          <ScalarProperty Name="CustomerHomePhone" ColumnName="CustomerHomePhone" />
+          <ScalarProperty Name="CustomerCountry" ColumnName="CustomerCountry" />
+          <ScalarProperty Name="CustomerHomePhoneCodeArea" ColumnName="CustomerHomePhoneCodeArea" />
+          <ScalarProperty Name="CustomerNotes" ColumnName="CustomerNotes" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_Resource_CallLogInfo">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_Resource_CallLogInfo">
+        <MappingFragment StoreEntitySet="CS_View_Resource_CallLogInfo">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="CallTypeDescription" ColumnName="CallTypeDescription" />
+          <ScalarProperty Name="CallTypeID" ColumnName="CallTypeID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CallDate" ColumnName="CallDate" />
+          <ScalarProperty Name="CallLogID" ColumnName="CallLogID" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="ComboName" ColumnName="ComboName" />
+          <ScalarProperty Name="EquipmentUnitNumber" ColumnName="EquipmentUnitNumber" />
+          <ScalarProperty Name="EquipmentDescription" ColumnName="EquipmentDescription" />
+          <ScalarProperty Name="EmployeeFirstName" ColumnName="EmployeeFirstName" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_FirstAlertContactPersonal">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_FirstAlertContactPersonal">
+        <MappingFragment StoreEntitySet="CS_FirstAlertContactPersonal">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="InPersonAdviseUser" ColumnName="InPersonAdviseUser" />
+          <ScalarProperty Name="InPersonAdviseDate" ColumnName="InPersonAdviseDate" />
+          <ScalarProperty Name="VMXAdviseUser" ColumnName="VMXAdviseUser" />
+          <ScalarProperty Name="VMXAdviseDate" ColumnName="VMXAdviseDate" />
+          <ScalarProperty Name="EmailAdviseUser" ColumnName="EmailAdviseUser" />
+          <ScalarProperty Name="EmailAdviseDate" ColumnName="EmailAdviseDate" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="FirstAlertID" ColumnName="FirstAlertID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_FirstAlertReportContactPersonal">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_FirstAlertReportContactPersonal">
+        <MappingFragment StoreEntitySet="CS_View_FirstAlertReportContactPersonal">
+          <ScalarProperty Name="InPersonADviseDate" ColumnName="InPersonADviseDate" />
+          <ScalarProperty Name="VMXAdviseDate" ColumnName="VMXAdviseDate" />
+          <ScalarProperty Name="EmailAdviseDate" ColumnName="EmailAdviseDate" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="FirstAlertID" ColumnName="FirstAlertID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_CallLogResource">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CallLogResource">
+        <MappingFragment StoreEntitySet="CS_CallLogResource">
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="Voicemail" ColumnName="Voicemail" />
+          <ScalarProperty Name="InPerson" ColumnName="InPerson" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="CallLogID" ColumnName="CallLogID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_ProjectCalendar_Allocation">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_ProjectCalendar_Allocation">
+        <MappingFragment StoreEntitySet="CS_View_ProjectCalendar_Allocation">
+          <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EquipmentTypeID" ColumnName="EquipmentTypeID" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ResourceEndDateTime" ColumnName="ResourceEndDateTime" />
+          <ScalarProperty Name="ResourceStartDateTime" ColumnName="ResourceStartDateTime" />
+          <ScalarProperty Name="ResourceDuration" ColumnName="ResourceDuration" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="JobStateName" ColumnName="JobStateName" />
+          <ScalarProperty Name="JobCityName" ColumnName="JobCityName" />
+          <ScalarProperty Name="JobDivisionName" ColumnName="JobDivisionName" />
+          <ScalarProperty Name="JobDivisionID" ColumnName="JobDivisionID" />
+          <ScalarProperty Name="LastModification" ColumnName="LastModification" />
+          <ScalarProperty Name="JobStartDate" ColumnName="JobStartDate" />
+          <ScalarProperty Name="JobActionName" ColumnName="JobActionName" />
+          <ScalarProperty Name="JobActionID" ColumnName="JobActionID" />
+          <ScalarProperty Name="JobStatusName" ColumnName="JobStatusName" />
+          <ScalarProperty Name="JobStatusId" ColumnName="JobStatusId" />
+          <ScalarProperty Name="PresetInfoDate" ColumnName="PresetInfoDate" />
+          <ScalarProperty Name="JobInitialCallDate" ColumnName="JobInitialCallDate" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_ProjectCalendar_Reserved">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_ProjectCalendar_Reserved">
+        <MappingFragment StoreEntitySet="CS_View_ProjectCalendar_Reserved">
+          <ScalarProperty Name="EquipmentTypeName" ColumnName="EquipmentTypeName" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EquipmentTypeID" ColumnName="EquipmentTypeID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ResourceEndDateTime" ColumnName="ResourceEndDateTime" />
+          <ScalarProperty Name="ResourceStartDateTime" ColumnName="ResourceStartDateTime" />
+          <ScalarProperty Name="ResourceDuration" ColumnName="ResourceDuration" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="JobStateName" ColumnName="JobStateName" />
+          <ScalarProperty Name="JobCityName" ColumnName="JobCityName" />
+          <ScalarProperty Name="JobDivisionName" ColumnName="JobDivisionName" />
+          <ScalarProperty Name="JobDivisionID" ColumnName="JobDivisionID" />
+          <ScalarProperty Name="LastModification" ColumnName="LastModification" />
+          <ScalarProperty Name="JobStartDate" ColumnName="JobStartDate" />
+          <ScalarProperty Name="JobActionName" ColumnName="JobActionName" />
+          <ScalarProperty Name="JobActionID" ColumnName="JobActionID" />
+          <ScalarProperty Name="JobStatusName" ColumnName="JobStatusName" />
+          <ScalarProperty Name="JobStatusId" ColumnName="JobStatusId" />
+          <ScalarProperty Name="PresetInfoDate" ColumnName="PresetInfoDate" />
+          <ScalarProperty Name="JobInitialCallDate" ColumnName="JobInitialCallDate" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_ProjectCalendar_CallLog">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_ProjectCalendar_CallLog">
+        <MappingFragment StoreEntitySet="CS_View_ProjectCalendar_CallLog">
+          <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EquipmentTypeID" ColumnName="EquipmentTypeID" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="ResourceEndDateTime" ColumnName="ResourceEndDateTime" />
+          <ScalarProperty Name="ResourceStartDateTime" ColumnName="ResourceStartDateTime" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="CallLogParkedDate" ColumnName="CallLogParkedDate" />
+          <ScalarProperty Name="CallLogCallDate" ColumnName="CallLogCallDate" />
+          <ScalarProperty Name="CallLogTypeID" ColumnName="CallLogTypeID" />
+          <ScalarProperty Name="CallLogID" ColumnName="CallLogID" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="JobStateName" ColumnName="JobStateName" />
+          <ScalarProperty Name="JobCityName" ColumnName="JobCityName" />
+          <ScalarProperty Name="JobDivisionName" ColumnName="JobDivisionName" />
+          <ScalarProperty Name="JobDivisionID" ColumnName="JobDivisionID" />
+          <ScalarProperty Name="LastModification" ColumnName="LastModification" />
+          <ScalarProperty Name="JobStartDate" ColumnName="JobStartDate" />
+          <ScalarProperty Name="JobActionName" ColumnName="JobActionName" />
+          <ScalarProperty Name="JobActionID" ColumnName="JobActionID" />
+          <ScalarProperty Name="JobStatusName" ColumnName="JobStatusName" />
+          <ScalarProperty Name="JobStatusId" ColumnName="JobStatusId" />
+          <ScalarProperty Name="PresetInfoDate" ColumnName="PresetInfoDate" />
+          <ScalarProperty Name="JobInitialCallDate" ColumnName="JobInitialCallDate" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Contact_Load">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Contact_Load">
+        <MappingFragment StoreEntitySet="CS_Contact_Load">
+          <ScalarProperty Name="User2" ColumnName="User2" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="LUpd_User" ColumnName="LUpd_User" />
+          <ScalarProperty Name="LUpd_DateTime" ColumnName="LUpd_DateTime" />
+          <ScalarProperty Name="Crtd_User" ColumnName="Crtd_User" />
+          <ScalarProperty Name="Crtd_DateTime" ColumnName="Crtd_DateTime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="EMailAddr" ColumnName="EMailAddr" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="BillZip" ColumnName="BillZip" />
+          <ScalarProperty Name="BillThruProject" ColumnName="BillThruProject" />
+          <ScalarProperty Name="BillState" ColumnName="BillState" />
+          <ScalarProperty Name="BillSalut" ColumnName="BillSalut" />
+          <ScalarProperty Name="BillPhone" ColumnName="BillPhone" />
+          <ScalarProperty Name="BillName" ColumnName="BillName" />
+          <ScalarProperty Name="BillFax" ColumnName="BillFax" />
+          <ScalarProperty Name="BillCountry" ColumnName="BillCountry" />
+          <ScalarProperty Name="BillCity" ColumnName="BillCity" />
+          <ScalarProperty Name="BillAttn" ColumnName="BillAttn" />
+          <ScalarProperty Name="BillAddr2" ColumnName="BillAddr2" />
+          <ScalarProperty Name="BillAddr1" ColumnName="BillAddr1" />
+          <ScalarProperty Name="Addr2" ColumnName="Addr2" />
+          <ScalarProperty Name="Addr1" ColumnName="Addr1" />
+          <ScalarProperty Name="Attn" ColumnName="Attn" />
+          <ScalarProperty Name="CustId" ColumnName="CustId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Customer_Load">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Customer_Load">
+        <MappingFragment StoreEntitySet="CS_Customer_Load">
+          <ScalarProperty Name="User2" ColumnName="User2" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="LUpd_User" ColumnName="LUpd_User" />
+          <ScalarProperty Name="LUpd_DateTime" ColumnName="LUpd_DateTime" />
+          <ScalarProperty Name="Crtd_User" ColumnName="Crtd_User" />
+          <ScalarProperty Name="Crtd_DateTime" ColumnName="Crtd_DateTime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="EMailAddr" ColumnName="EMailAddr" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="BillZip" ColumnName="BillZip" />
+          <ScalarProperty Name="BillThruProject" ColumnName="BillThruProject" />
+          <ScalarProperty Name="BillState" ColumnName="BillState" />
+          <ScalarProperty Name="BillSalut" ColumnName="BillSalut" />
+          <ScalarProperty Name="BillPhone" ColumnName="BillPhone" />
+          <ScalarProperty Name="BillName" ColumnName="BillName" />
+          <ScalarProperty Name="BillFax" ColumnName="BillFax" />
+          <ScalarProperty Name="BillCountry" ColumnName="BillCountry" />
+          <ScalarProperty Name="BillCity" ColumnName="BillCity" />
+          <ScalarProperty Name="BillAttn" ColumnName="BillAttn" />
+          <ScalarProperty Name="BillAddr2" ColumnName="BillAddr2" />
+          <ScalarProperty Name="BillAddr1" ColumnName="BillAddr1" />
+          <ScalarProperty Name="Addr2" ColumnName="Addr2" />
+          <ScalarProperty Name="Addr1" ColumnName="Addr1" />
+          <ScalarProperty Name="Attn" ColumnName="Attn" />
+          <ScalarProperty Name="CustId" ColumnName="CustId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_CustomerContract_Load">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_CustomerContract_Load">
+        <MappingFragment StoreEntitySet="CS_CustomerContract_Load">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CheckSum" ColumnName="CheckSum" />
+          <ScalarProperty Name="status1" ColumnName="status1" />
+          <ScalarProperty Name="text_contract2" ColumnName="text_contract2" />
+          <ScalarProperty Name="text_contract1" ColumnName="text_contract1" />
+          <ScalarProperty Name="customer" ColumnName="customer" />
+          <ScalarProperty Name="date_end_org" ColumnName="date_end_org" />
+          <ScalarProperty Name="Date_Start_Org" ColumnName="Date_Start_Org" />
+          <ScalarProperty Name="LUpd_User" ColumnName="LUpd_User" />
+          <ScalarProperty Name="LUpd_DateTime" ColumnName="LUpd_DateTime" />
+          <ScalarProperty Name="Crtd_User" ColumnName="Crtd_User" />
+          <ScalarProperty Name="Crtd_DateTime" ColumnName="Crtd_DateTime" />
+          <ScalarProperty Name="contract_desc" ColumnName="contract_desc" />
+          <ScalarProperty Name="contract" ColumnName="contract" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Division_Load">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Division_Load">
+        <MappingFragment StoreEntitySet="CS_Division_Load">
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="StateProvinceCode" ColumnName="StateProvinceCode" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="DivisionGUID" ColumnName="DivisionGUID" />
+          <ScalarProperty Name="InactiveCodeFlag" ColumnName="InactiveCodeFlag" />
+          <ScalarProperty Name="DivisionDescription" ColumnName="DivisionDescription" />
+          <ScalarProperty Name="DivisionCode" ColumnName="DivisionCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Employee_Load">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Employee_Load">
+        <MappingFragment StoreEntitySet="CS_Employee_Load">
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PassportExpireDate" ColumnName="PassportExpireDate" />
+          <ScalarProperty Name="PassportIssueDate" ColumnName="PassportIssueDate" />
+          <ScalarProperty Name="PassportCountryCode" ColumnName="PassportCountryCode" />
+          <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+          <ScalarProperty Name="DriversLicenseExpireDate" ColumnName="DriversLicenseExpireDate" />
+          <ScalarProperty Name="DriversLicenseStateProvinceCode" ColumnName="DriversLicenseStateProvinceCode" />
+          <ScalarProperty Name="DriversLicenseClass" ColumnName="DriversLicenseClass" />
+          <ScalarProperty Name="DriversLicenseNumber" ColumnName="DriversLicenseNumber" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="PersonJobStartDate" ColumnName="PersonJobStartDate" />
+          <ScalarProperty Name="BusinessCardTitle" ColumnName="BusinessCardTitle" />
+          <ScalarProperty Name="JobCode" ColumnName="JobCode" />
+          <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+          <ScalarProperty Name="DivisionCode" ColumnName="DivisionCode" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="CanadaAvailableFlag" ColumnName="CanadaAvailableFlag" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="StateProvinceCode" ColumnName="StateProvinceCode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="OtherPhone" ColumnName="OtherPhone" />
+          <ScalarProperty Name="OtherPhoneAreaCode" ColumnName="OtherPhoneAreaCode" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="MobileAreaCode" ColumnName="MobileAreaCode" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="HomeAreaCode" ColumnName="HomeAreaCode" />
+          <ScalarProperty Name="FaxPhone" ColumnName="FaxPhone" />
+          <ScalarProperty Name="FaxAreaCode" ColumnName="FaxAreaCode" />
+          <ScalarProperty Name="DayPhone" ColumnName="DayPhone" />
+          <ScalarProperty Name="DayAreaCode" ColumnName="DayAreaCode" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+          <ScalarProperty Name="PersonGUID" ColumnName="PersonGUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_EmployeeEmergencyContact_Load">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EmployeeEmergencyContact_Load">
+        <MappingFragment StoreEntitySet="CS_EmployeeEmergencyContact_Load">
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="RelationshipDescription" ColumnName="RelationshipDescription" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="MobileAreaCode" ColumnName="MobileAreaCode" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="HomeAreaCode" ColumnName="HomeAreaCode" />
+          <ScalarProperty Name="DayPhone" ColumnName="DayPhone" />
+          <ScalarProperty Name="DayAreaCode" ColumnName="DayAreaCode" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PersonGUID" ColumnName="PersonGUID" />
+          <ScalarProperty Name="PersonEmergencyGUID" ColumnName="PersonEmergencyGUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Equipment_Load">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Equipment_Load">
+        <MappingFragment StoreEntitySet="CS_Equipment_Load">
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="AttachUndercutter" ColumnName="AttachUndercutter" />
+          <ScalarProperty Name="AttachTieTamper" ColumnName="AttachTieTamper" />
+          <ScalarProperty Name="AttachTieInserter" ColumnName="AttachTieInserter" />
+          <ScalarProperty Name="AttachTieClamp" ColumnName="AttachTieClamp" />
+          <ScalarProperty Name="AttachSlipSheet" ColumnName="AttachSlipSheet" />
+          <ScalarProperty Name="AttachPileDriver" ColumnName="AttachPileDriver" />
+          <ScalarProperty Name="AttachPanelBoss" ColumnName="AttachPanelBoss" />
+          <ScalarProperty Name="RegisteredState" ColumnName="RegisteredState" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="EquipmentFunction" ColumnName="EquipmentFunction" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="BodyType" ColumnName="BodyType" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EquipmentTypeNumber" ColumnName="EquipmentTypeNumber" />
+          <ScalarProperty Name="EquipmentNumber" ColumnName="EquipmentNumber" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_EquipmentPermit_Load">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_EquipmentPermit_Load">
+        <MappingFragment StoreEntitySet="CS_EquipmentPermit_Load">
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="BuiltDate" ColumnName="BuiltDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="LicenseNumber" ColumnName="LicenseNumber" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="OneSourceModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_JobSummary">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_JobSummary">
+        <MappingFragment StoreEntitySet="CS_View_JobSummary">
+          <ScalarProperty Name="IsReserve" ColumnName="IsReserve" />
+          <ScalarProperty Name="EquipmentStatus" ColumnName="EquipmentStatus" />
+          <ScalarProperty Name="JobTypeDescription" ColumnName="JobTypeDescription" />
+          <ScalarProperty Name="PriceTypeAcronym" ColumnName="PriceTypeAcronym" />
+          <ScalarProperty Name="HasResources" ColumnName="HasResources" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="ClosedDate" ColumnName="ClosedDate" />
+          <ScalarProperty Name="PresetDate" ColumnName="PresetDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ResourCallDate" ColumnName="ResourCallDate" />
+          <ScalarProperty Name="CallDate" ColumnName="CallDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="LastCallDate" ColumnName="LastCallDate" />
+          <ScalarProperty Name="LastCallType" ColumnName="LastCallType" />
+          <ScalarProperty Name="CallLogId" ColumnName="CallLogId" />
+          <ScalarProperty Name="ResouceLastModification" ColumnName="ResouceLastModification" />
+          <ScalarProperty Name="LastModification" ColumnName="LastModification" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="JobStatusId" ColumnName="JobStatusId" />
+          <ScalarProperty Name="JobStatus" ColumnName="JobStatus" />
+          <ScalarProperty Name="ProjectManager" ColumnName="ProjectManager" />
+          <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="IsResource" ColumnName="IsResource" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="ResourceDivisionId" ColumnName="ResourceDivisionId" />
+          <ScalarProperty Name="ResourceDivision" ColumnName="ResourceDivision" />
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_TurnoverNonActiveReport">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_TurnoverNonActiveReport">
+        <MappingFragment StoreEntitySet="CS_View_TurnoverNonActiveReport">
+          <ScalarProperty Name="IsKeyPerson" ColumnName="IsKeyPerson" />
+          <ScalarProperty Name="IsReserve" ColumnName="IsReserve" />
+          <ScalarProperty Name="EquipmentStatus" ColumnName="EquipmentStatus" />
+          <ScalarProperty Name="JobTypeDescription" ColumnName="JobTypeDescription" />
+          <ScalarProperty Name="PriceTypeAcronym" ColumnName="PriceTypeAcronym" />
+          <ScalarProperty Name="HasResources" ColumnName="HasResources" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="ClosedDate" ColumnName="ClosedDate" />
+          <ScalarProperty Name="PresetDate" ColumnName="PresetDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ResourceCallDate" ColumnName="ResourceCallDate" />
+          <ScalarProperty Name="CallDate" ColumnName="CallDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="LastCallDate" ColumnName="LastCallDate" />
+          <ScalarProperty Name="LastCallType" ColumnName="LastCallType" />
+          <ScalarProperty Name="CallLogId" ColumnName="CallLogId" />
+          <ScalarProperty Name="ResouceLastModification" ColumnName="ResouceLastModification" />
+          <ScalarProperty Name="LastModification" ColumnName="LastModification" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="JobStatusId" ColumnName="JobStatusId" />
+          <ScalarProperty Name="JobStatus" ColumnName="JobStatus" />
+          <ScalarProperty Name="ProjectManager" ColumnName="ProjectManager" />
+          <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="IsResource" ColumnName="IsResource" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="ResourceDivisionId" ColumnName="ResourceDivisionId" />
+          <ScalarProperty Name="ResourceDivision" ColumnName="ResourceDivision" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_View_TurnoverActiveReport">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_TurnoverActiveReport">
+        <MappingFragment StoreEntitySet="CS_View_TurnoverActiveReport">
+          <ScalarProperty Name="RowGroup" ColumnName="RowGroup" />
+          <ScalarProperty Name="IsKeyPerson" ColumnName="IsKeyPerson" />
+          <ScalarProperty Name="IsAdded" ColumnName="IsAdded" />
+          <ScalarProperty Name="ResourceName" ColumnName="ResourceName" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_ProjectsForPurchasing">
+      <EntityTypeMapping TypeName="OneSourceModel.vw_ProjectsForPurchasing">
+        <MappingFragment StoreEntitySet="vw_ProjectsForPurchasing">
+          <ScalarProperty Name="dt_Closed" ColumnName="dt_Closed" />
+          <ScalarProperty Name="JobType" ColumnName="JobType" />
+          <ScalarProperty Name="PriceType" ColumnName="PriceType" />
+          <ScalarProperty Name="JobNo" ColumnName="JobNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_ProjectsForSL">
+      <EntityTypeMapping TypeName="OneSourceModel.vw_ProjectsForSL">
+        <MappingFragment StoreEntitySet="vw_ProjectsForSL">
+          <ScalarProperty Name="BillingManager" ColumnName="BillingManager" />
+          <ScalarProperty Name="RequestedBy" ColumnName="RequestedBy" />
+          <ScalarProperty Name="JobSiteState" ColumnName="JobSiteState" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="PriceJobType" ColumnName="PriceJobType" />
+          <ScalarProperty Name="Start_Date" ColumnName="Start_Date" />
+          <ScalarProperty Name="Project_Desc" ColumnName="Project_Desc" />
+          <ScalarProperty Name="Project" ColumnName="Project" />
+          <ScalarProperty Name="LocationZip" ColumnName="LocationZip" />
+          <ScalarProperty Name="LocationState" ColumnName="LocationState" />
+          <ScalarProperty Name="LocationCity" ColumnName="LocationCity" />
+          <ScalarProperty Name="Emergency" ColumnName="Emergency" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CS_Route">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_Route">
+        <MappingFragment StoreEntitySet="CS_Route">
+          <ScalarProperty Name="ZipCodeID" ColumnName="ZipCodeID" />
+          <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CountyPermitOffice" ColumnName="CountyPermitOffice" />
+          <ScalarProperty Name="CityPermitOffice" ColumnName="CityPermitOffice" />
+          <ScalarProperty Name="Fuel" ColumnName="Fuel" />
+          <ScalarProperty Name="Hours" ColumnName="Hours" />
+          <ScalarProperty Name="Miles" ColumnName="Miles" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_GetJobSummary" FunctionName="OneSourceModel.Store.CS_SP_GetJobSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OneSourceModel.CS_SP_GetJobSummary_Result">
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="ResourceDivision" ColumnName="ResourceDivision" />
+          <ScalarProperty Name="ResourceDivisionId" ColumnName="ResourceDivisionId" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="PrefixedNumber" ColumnName="PrefixedNumber" />
+          <ScalarProperty Name="IsResource" ColumnName="IsResource" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+          <ScalarProperty Name="ProjectManager" ColumnName="ProjectManager" />
+          <ScalarProperty Name="JobStatus" ColumnName="JobStatus" />
+          <ScalarProperty Name="JobStatusId" ColumnName="JobStatusId" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="LastModification" ColumnName="LastModification" />
+          <ScalarProperty Name="ResouceLastModification" ColumnName="ResouceLastModification" />
+          <ScalarProperty Name="CallLogId" ColumnName="CallLogId" />
+          <ScalarProperty Name="LastCallType" ColumnName="LastCallType" />
+          <ScalarProperty Name="LastCallDate" ColumnName="LastCallDate" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CallDate" ColumnName="CallDate" />
+          <ScalarProperty Name="ResourCallDate" ColumnName="ResourCallDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="PresetDate" ColumnName="PresetDate" />
+          <ScalarProperty Name="ClosedDate" ColumnName="ClosedDate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="HasResources" ColumnName="HasResources" />
+          <ScalarProperty Name="PriceTypeAcronym" ColumnName="PriceTypeAcronym" />
+          <ScalarProperty Name="JobTypeDescription" ColumnName="JobTypeDescription" />
+          <ScalarProperty Name="EquipmentStatus" ColumnName="EquipmentStatus" />
+          <ScalarProperty Name="IsReserve" ColumnName="IsReserve" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_GetCallCriteriaValues" FunctionName="OneSourceModel.Store.CS_SP_GetCallCriteriaValues">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OneSourceModel.CS_SP_GetCallCriteriaValues_Result" />
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_GetCallCriteriaCallLogValues" FunctionName="OneSourceModel.Store.CS_SP_GetCallCriteriaCallLogValues">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OneSourceModel.CS_SP_GetCallCriteriaValues_Result">
+          <ScalarProperty Name="CallCriteriaID" ColumnName="CallCriteriaID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CS_SP_CheckCallCriteria" FunctionName="OneSourceModel.Store.CS_SP_CheckCallCriteria">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OneSourceModel.CS_SP_CheckCallCriteria_Result">
+          <ScalarProperty Name="CallCriteriaID" ColumnName="CallCriteriaID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="CS_View_GetJobData">
+      <EntityTypeMapping TypeName="OneSourceModel.CS_View_GetJobData">
+        <MappingFragment StoreEntitySet="CS_View_GetJobData">
+          <ScalarProperty Name="LastJobStatusId" ColumnName="LastJobStatusId" />
+          <ScalarProperty Name="Hazmat" ColumnName="Hazmat" />
+          <ScalarProperty Name="STCCInfo" ColumnName="STCCInfo" />
+          <ScalarProperty Name="UnNumber" ColumnName="UnNumber" />
+          <ScalarProperty Name="Lading" ColumnName="Lading" />
+          <ScalarProperty Name="NumberEmpties" ColumnName="NumberEmpties" />
+          <ScalarProperty Name="NumberLoads" ColumnName="NumberLoads" />
+          <ScalarProperty Name="NumberEngines" ColumnName="NumberEngines" />
+          <ScalarProperty Name="Directions" ColumnName="Directions" />
+          <ScalarProperty Name="AlternateName" ColumnName="AlternateName" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="ZipCodeName" ColumnName="ZipCodeName" />
+          <ScalarProperty Name="ZipCodeID" ColumnName="ZipCodeID" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateAcronym" ColumnName="StateAcronym" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="HSIRepEmployeeNickname" ColumnName="HSIRepEmployeeNickname" />
+          <ScalarProperty Name="HSIRepEmployeeFirstName" ColumnName="HSIRepEmployeeFirstName" />
+          <ScalarProperty Name="HSIRepEmployeeLastName" ColumnName="HSIRepEmployeeLastName" />
+          <ScalarProperty Name="HSIRepEmployeeID" ColumnName="HSIRepEmployeeID" />
+          <ScalarProperty Name="POCFollowUpEmployeeNickname" ColumnName="POCFollowUpEmployeeNickname" />
+          <ScalarProperty Name="POCFollowUpEmployeeFirstName" ColumnName="POCFollowUpEmployeeFirstName" />
+          <ScalarProperty Name="POCFollowUpEmployeeLastName" ColumnName="POCFollowUpEmployeeLastName" />
+          <ScalarProperty Name="POCFollowUpEmployeeID" ColumnName="POCFollowUpEmployeeID" />
+          <ScalarProperty Name="LostJobCompetitorID" ColumnName="LostJobCompetitorID" />
+          <ScalarProperty Name="LostJobReasonID" ColumnName="LostJobReasonID" />
+          <ScalarProperty Name="LostJobNotes" ColumnName="LostJobNotes" />
+          <ScalarProperty Name="CustomerSpecificInfo" ColumnName="CustomerSpecificInfo" />
+          <ScalarProperty Name="ApprovingRVPEmployeeID" ColumnName="ApprovingRVPEmployeeID" />
+          <ScalarProperty Name="SpecialPricingNotes" ColumnName="SpecialPricingNotes" />
+          <ScalarProperty Name="LumpsumDuration" ColumnName="LumpsumDuration" />
+          <ScalarProperty Name="LumpsumValue" ColumnName="LumpsumValue" />
+          <ScalarProperty Name="OverallJobDiscount" ColumnName="OverallJobDiscount" />
+          <ScalarProperty Name="SpecialPricingType" ColumnName="SpecialPricingType" />
+          <ScalarProperty Name="FrequencyID" ColumnName="FrequencyID" />
+          <ScalarProperty Name="RequestedByEmployeeNickname" ColumnName="RequestedByEmployeeNickname" />
+          <ScalarProperty Name="RequestedByEmployeeFirstName" ColumnName="RequestedByEmployeeFirstName" />
+          <ScalarProperty Name="RequestedByEmployeeLastName" ColumnName="RequestedByEmployeeLastName" />
+          <ScalarProperty Name="RequestedByEmployeeID" ColumnName="RequestedByEmployeeID" />
+          <ScalarProperty Name="InterimBill" ColumnName="InterimBill" />
+          <ScalarProperty Name="ProjectManagerFullName" ColumnName="ProjectManagerFullName" />
+          <ScalarProperty Name="ProjectManager" ColumnName="ProjectManager" />
+          <ScalarProperty Name="JobCloseDate" ColumnName="JobCloseDate" />
+          <ScalarProperty Name="JobTypeDescription" ColumnName="JobTypeDescription" />
+          <ScalarProperty Name="JobTypeID" ColumnName="JobTypeID" />
+          <ScalarProperty Name="JobCategoryID" ColumnName="JobCategoryID" />
+          <ScalarProperty Name="JobActionName" ColumnName="JobActionName" />
+          <ScalarProperty Name="JobActionID" ColumnName="JobActionID" />
+          <ScalarProperty Name="JobStartDate" ColumnName="JobStartDate" />
+          <ScalarProperty Name="PriceTypeName" ColumnName="PriceTypeName" />
+          <ScalarProperty Name="PriceTypeAcronym" ColumnName="PriceTypeAcronym" />
+          <ScalarProperty Name="PriceTypeID" ColumnName="PriceTypeID" />
+          <ScalarProperty Name="JobStatusName" ColumnName="JobStatusName" />
+          <ScalarProperty Name="JobStatusID" ColumnName="JobStatusID" />
+          <ScalarProperty Name="InitialCallTime" ColumnName="InitialCallTime" />
+          <ScalarProperty Name="InitialCallDate" ColumnName="InitialCallDate" />
+          <ScalarProperty Name="BillToContactPhone" ColumnName="BillToContactPhone" />
+          <ScalarProperty Name="BillToContactState" ColumnName="BillToContactState" />
+          <ScalarProperty Name="BillToContactAttn" ColumnName="BillToContactAttn" />
+          <ScalarProperty Name="BillToContactDynamicsContact" ColumnName="BillToContactDynamicsContact" />
+          <ScalarProperty Name="BillToContactAlias" ColumnName="BillToContactAlias" />
+          <ScalarProperty Name="BillToContactFirstName" ColumnName="BillToContactFirstName" />
+          <ScalarProperty Name="BillToContactLastName" ColumnName="BillToContactLastName" />
+          <ScalarProperty Name="BillToContactID" ColumnName="BillToContactID" />
+          <ScalarProperty Name="SecondaryContactPhone" ColumnName="SecondaryContactPhone" />
+          <ScalarProperty Name="SecondaryContactState" ColumnName="SecondaryContactState" />
+          <ScalarProperty Name="SecondaryContactAttn" ColumnName="SecondaryContactAttn" />
+          <ScalarProperty Name="SecondaryContactDynamicsContact" ColumnName="SecondaryContactDynamicsContact" />
+          <ScalarProperty Name="SecondaryContactAlias" ColumnName="SecondaryContactAlias" />
+          <ScalarProperty Name="SecondaryContactFirstName" ColumnName="SecondaryContactFirstName" />
+          <ScalarProperty Name="SecondaryContactLastName" ColumnName="SecondaryContactLastName" />
+          <ScalarProperty Name="SecondaryContactID" ColumnName="SecondaryContactID" />
+          <ScalarProperty Name="OnSiteContactPhone" ColumnName="OnSiteContactPhone" />
+          <ScalarProperty Name="OnSiteContactState" ColumnName="OnSiteContactState" />
+          <ScalarProperty Name="OnSiteContactAttn" ColumnName="OnSiteContactAttn" />
+          <ScalarProperty Name="OnSiteContactDynamicsContact" ColumnName="OnSiteContactDynamicsContact" />
+          <ScalarProperty Name="OnSiteContactAlias" ColumnName="OnSiteContactAlias" />
+          <ScalarProperty Name="OnSiteContactFirstName" ColumnName="OnSiteContactFirstName" />
+          <ScalarProperty Name="OnSiteContactLastName" ColumnName="OnSiteContactLastName" />
+          <ScalarProperty Name="OnSiteContactID" ColumnName="OnSiteContactID" />
+          <ScalarProperty Name="PrimaryDivisionName" ColumnName="PrimaryDivisionName" />
+          <ScalarProperty Name="PrimaryDivisionID" ColumnName="PrimaryDivisionID" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+          <ScalarProperty Name="POCEmployeeDivisionName" ColumnName="POCEmployeeDivisionName" />
+          <ScalarProperty Name="POCEmployeeDivisionID" ColumnName="POCEmployeeDivisionID" />
+          <ScalarProperty Name="POCEmployeeNickname" ColumnName="POCEmployeeNickname" />
+          <ScalarProperty Name="POCEmployeeFirstName" ColumnName="POCEmployeeFirstName" />
+          <ScalarProperty Name="POCEmployeeLastName" ColumnName="POCEmployeeLastName" />
+          <ScalarProperty Name="POCEmployeeID" ColumnName="POCEmployeeID" />
+          <ScalarProperty Name="PrimaryContactPhone" ColumnName="PrimaryContactPhone" />
+          <ScalarProperty Name="PrimaryContactState" ColumnName="PrimaryContactState" />
+          <ScalarProperty Name="PrimaryContactAttn" ColumnName="PrimaryContactAttn" />
+          <ScalarProperty Name="PrimaryContactDynamicsContact" ColumnName="PrimaryContactDynamicsContact" />
+          <ScalarProperty Name="PrimaryContactAlias" ColumnName="PrimaryContactAlias" />
+          <ScalarProperty Name="PrimaryContactFirstName" ColumnName="PrimaryContactFirstName" />
+          <ScalarProperty Name="PrimaryContactLastName" ColumnName="PrimaryContactLastName" />
+          <ScalarProperty Name="PrimaryContactID" ColumnName="PrimaryContactID" />
+          <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+          <ScalarProperty Name="CustomerAttn" ColumnName="CustomerAttn" />
+          <ScalarProperty Name="CustomerCountry" ColumnName="CustomerCountry" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="JobEmergencyResponse" ColumnName="JobEmergencyResponse" />
+          <ScalarProperty Name="JobInternalTracking" ColumnName="JobInternalTracking" />
+          <ScalarProperty Name="JobNumber" ColumnName="JobNumber" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,22 @@
+﻿.ContractDetail
+{
+}
+
+.ContractDetail .Label
+{
+    display: block;
+    float: left;
+    text-align: right;
+    width: 120px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.ContractDetail .Form
+{
+    display: block;
+    float: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}

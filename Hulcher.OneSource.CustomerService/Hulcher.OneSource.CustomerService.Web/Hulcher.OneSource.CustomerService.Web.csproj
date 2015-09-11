@@ -1,0 +1,772 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD82BFD3-CFA3-4330-81ED-BE4B6696DBA5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hulcher.OneSource.CustomerService.Web</RootNamespace>
+    <AssemblyName>Hulcher.OneSource.CustomerService.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Testing|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\Libraries\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Enterprise Library\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Libraries\Enterprise Library\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Enterprise Library\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\ReportViewer\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AutoCompletePopUp.aspx" />
+    <Content Include="AutomatedDPI.aspx" />
+    <Content Include="CallEntry.aspx" />
+    <Content Include="CityMaintenance.aspx" />
+    <Content Include="CustomerRequest.aspx" />
+    <Content Include="DPIReport.aspx" />
+    <Content Include="EquipmentMaintenance.aspx" />
+    <Content Include="FirstAlert.aspx" />
+    <Content Include="Images\calendar_icon.png" />
+    <Content Include="Images\hulcher_logo.jpg" />
+    <Content Include="Images\KeyPerson.jpg" />
+    <Content Include="Images\phoneListing.png" />
+    <Content Include="Images\routeMaintenance.png" />
+    <Content Include="ManagersLocation.aspx" />
+    <Content Include="PhoneListing.aspx" />
+    <Content Include="ProjectCalendar.aspx" />
+    <Content Include="ProjectCalendarPrint.aspx" />
+    <Content Include="RouteMaintenance.aspx" />
+    <Content Include="Scripts\img\blank.gif" />
+    <Content Include="Scripts\img\cloud-popup-relative.png" />
+    <Content Include="Images\mj.png" />
+    <Content Include="Images\mr.png" />
+    <Content Include="Images\navigation-down-frame.png" />
+    <Content Include="Images\navigation-left-frame.png" />
+    <Content Include="Images\navigation-right-frame.png" />
+    <Content Include="Images\navigation-up-frame.png" />
+    <Content Include="MapPlotting.aspx" />
+    <Content Include="ProcessDPI.aspx" />
+    <Content Include="RateTables.aspx" />
+    <Content Include="RegionalMaintenance.aspx" />
+    <Content Include="Scripts\formatFunctions.js" />
+    <Content Include="Scripts\img\close-hover.gif" />
+    <Content Include="Scripts\img\close.gif" />
+    <Content Include="Scripts\img\corners\botl.png" />
+    <Content Include="Scripts\img\corners\botm.png" />
+    <Content Include="Scripts\img\corners\botr.png" />
+    <Content Include="Scripts\img\corners\midl.png" />
+    <Content Include="Scripts\img\corners\midr.png" />
+    <Content Include="Scripts\img\corners\topl.png" />
+    <Content Include="Scripts\img\corners\topm.png" />
+    <Content Include="Scripts\img\corners\topr.png" />
+    <Content Include="Scripts\img\layer-switcher-minimize.png" />
+    <Content Include="Scripts\img\slider.png" />
+    <Content Include="Scripts\img\zoombar.png" />
+    <Content Include="Scripts\img\_north-mini.png" />
+    <Content Include="Scripts\jquery-1.6.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\jquery.maskedinput-1.3.min.js" />
+    <Content Include="Scripts\json2.js" />
+    <Content Include="Scripts\img\east-mini.png" />
+    <Content Include="Scripts\img\north-mini.png" />
+    <Content Include="Scripts\img\south-mini.png" />
+    <Content Include="Scripts\img\west-mini.png" />
+    <Content Include="Scripts\img\zoom-minus-mini.png" />
+    <Content Include="Scripts\img\zoom-plus-mini.png" />
+    <Content Include="Scripts\ol.js" />
+    <Content Include="Scripts\OpenLayers.js" />
+    <Content Include="Scripts\popup.js" />
+    <Content Include="Scripts\theme\default\style.css" />
+    <Content Include="ShiftTurnOverReport.aspx" />
+    <Content Include="DashboardSearch.aspx" />
+    <Content Include="CustomerMaintenance.aspx" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="DashboardPrint.aspx" />
+    <Content Include="Default.htm" />
+    <Content Include="Email.aspx" />
+    <Content Include="EmployeeMaintenance.aspx" />
+    <Content Include="Images\blackphone.gif" />
+    <Content Include="Images\scavenger.jpg" />
+    <Content Include="Images\Search.png" />
+    <Content Include="EssentialJobData.aspx" />
+    <Content Include="JobRecordPrint.aspx" />
+    <Content Include="Permitting.aspx" />
+    <Content Include="QuickReference.aspx" />
+    <Content Include="ResourceTransfer.aspx" />
+    <Content Include="Scripts\AutoComplete.js" />
+    <Content Include="Scripts\jquery.jgrowl_minimized.js" />
+    <Content Include="Scripts\jquery.multiselect.min.js" />
+    <Content Include="Styles\CallCriteria.css" />
+    <Content Include="Styles\CallEntry.css" />
+    <Content Include="Styles\Email.css" />
+    <Content Include="Styles\Forms.css" />
+    <Content Include="Styles\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Styles\jquery.jgrowl.css" />
+    <Content Include="Styles\jquery.multiselect.css" />
+    <Content Include="Styles\Permitting.css" />
+    <Content Include="Styles\ProcessDPI.css" />
+    <Content Include="Styles\ProjectCalendar.css" />
+    <Content Include="Styles\ReportView.css" />
+    <Content Include="Styles\SorterBasePrint.css" />
+    <Content Include="Styles\DashBoard.css" />
+    <Content Include="Styles\EssentialJobData.css" />
+    <Content Include="Styles\QuickReferencePrint.css" />
+    <Content Include="Styles\TaskMenu.css" />
+    <Content Include="SubContractorMaintenance.aspx" />
+    <Content Include="testPage.aspx" />
+    <Content Include="UserControls\AutoCompleteTextBox.ascx" />
+    <Content Include="AjaxService.svc" />
+    <Content Include="UserControls\CallCriteria\CallCriteriaInfo.ascx" />
+    <Content Include="FirstAlertReport.aspx" />
+    <Content Include="UserControls\JobRecord\EquipmentRequested.ascx" />
+    <Content Include="WebService\AutoCompleteWebService.svc" />
+    <Content Include="ContractDetail.aspx" />
+    <Content Include="Download.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\ajax-loader2.gif" />
+    <Content Include="Images\asc.gif" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\CollapseHolder\Collapse.gif" />
+    <Content Include="Images\CollapseHolder\Expand.gif" />
+    <Content Include="Images\ComboBox\windows-arrow.gif" />
+    <Content Include="Images\DatePicker\Calendar.gif" />
+    <Content Include="Images\desc.gif" />
+    <Content Include="Images\ErrorSummary.png" />
+    <Content Include="Images\helmet.png" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\money.png" />
+    <Content Include="Images\uploading.gif" />
+    <Content Include="ResourceAllocation.aspx" />
+    <Content Include="JobRecord.aspx" />
+    <Content Include="SamplePage.aspx" />
+    <Content Include="Scripts\autoLoader.js" />
+    <Content Include="Scripts\autoNumeric-1.6.2.js" />
+    <Content Include="Scripts\DirtyFormValidator.js" />
+    <Content Include="Scripts\jobInfo.js" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-ui-1.8.7.custom.js" />
+    <Content Include="Scripts\jquery.jqEasyCharCounter.js" />
+    <Content Include="Scripts\jquery.metadata.js" />
+    <Content Include="Scripts\jquery.tablesorter.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Scripts\jquery.validationsummary.js" />
+    <Content Include="Scripts\jqueryMaxLenght.js" />
+    <Content Include="Scripts\jsModalLoadingScript.js" />
+    <Content Include="Scripts\webtoolkit.jscrollable.js" />
+    <Content Include="Scripts\webtoolkit.scrollabletable.js" />
+    <Content Include="Styles\CollapseHolder.css" />
+    <Content Include="Styles\ComboBox.css" />
+    <Content Include="Styles\ContractDetail.css" />
+    <Content Include="Styles\Default.css" />
+    <Content Include="Styles\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Styles\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Styles\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Styles\images\ui-bg_glass_100_fcfcfc_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_65_d7deea_1x400.png" />
+    <Content Include="Styles\images\ui-bg_gloss-wave_35_3475cd_500x100.png" />
+    <Content Include="Styles\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Styles\images\ui-bg_highlight-soft_75_5c92ff_1x100.png" />
+    <Content Include="Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Styles\images\ui-icons_b3c1d1_256x240.png" />
+    <Content Include="Styles\images\ui-icons_c8d6e6_256x240.png" />
+    <Content Include="Styles\images\ui-icons_ef0808_256x240.png" />
+    <Content Include="Styles\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Styles\JobRecord.css" />
+    <Content Include="Styles\jquery.ui.all.css" />
+    <Content Include="Styles\jquery.ui.base.css" />
+    <Content Include="Styles\jquery.ui.core.css" />
+    <Content Include="Styles\jquery.ui.datepicker.css" />
+    <Content Include="Styles\jquery.ui.theme.css" />
+    <Content Include="Styles\LoadingModalPopUp.css" />
+    <Content Include="Styles\ResourceAllocation.css" />
+    <Content Include="Styles\sorter.css" />
+    <Content Include="Styles\Validators.css" />
+    <Content Include="Uploads\Permits\temp.txt" />
+    <Content Include="Uploads\PhotoReports\temp.txt" />
+    <Content Include="UserControls\CollapseHolder.ascx" />
+    <Content Include="UserControls\DatePicker.ascx" />
+    <Content Include="UserControls\JobRecord\CustomerInfo.ascx" />
+    <Content Include="UserControls\JobRecord\JobCallLog.ascx" />
+    <Content Include="UserControls\JobRecord\JobDescription.ascx" />
+    <Content Include="UserControls\JobRecord\JobInfo.ascx" />
+    <Content Include="UserControls\JobRecord\LocationInfo.ascx" />
+    <Content Include="UserControls\JobRecord\PermitInfo.ascx" />
+    <Content Include="UserControls\JobRecord\PhotoReport.ascx" />
+    <Content Include="WebService\JSONService.svc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="ReportMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoCompletePopUp.aspx.cs">
+      <DependentUpon>AutoCompletePopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoCompletePopUp.aspx.designer.cs">
+      <DependentUpon>AutoCompletePopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedDPI.aspx.cs">
+      <DependentUpon>AutomatedDPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutomatedDPI.aspx.designer.cs">
+      <DependentUpon>AutomatedDPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CallEntry.aspx.cs">
+      <DependentUpon>CallEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CallEntry.aspx.designer.cs">
+      <DependentUpon>CallEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CityMaintenance.aspx.cs">
+      <DependentUpon>CityMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CityMaintenance.aspx.designer.cs">
+      <DependentUpon>CityMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRequest.aspx.cs">
+      <DependentUpon>CustomerRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerRequest.aspx.designer.cs">
+      <DependentUpon>CustomerRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DPIReport.aspx.cs">
+      <DependentUpon>DPIReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DPIReport.aspx.designer.cs">
+      <DependentUpon>DPIReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentMaintenance.aspx.cs">
+      <DependentUpon>EquipmentMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EquipmentMaintenance.aspx.designer.cs">
+      <DependentUpon>EquipmentMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FirstAlert.aspx.cs">
+      <DependentUpon>FirstAlert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FirstAlert.aspx.designer.cs">
+      <DependentUpon>FirstAlert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagersLocation.aspx.cs">
+      <DependentUpon>ManagersLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagersLocation.aspx.designer.cs">
+      <DependentUpon>ManagersLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MapPlotting.aspx.cs">
+      <DependentUpon>MapPlotting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapPlotting.aspx.designer.cs">
+      <DependentUpon>MapPlotting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneListing.aspx.cs">
+      <DependentUpon>PhoneListing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhoneListing.aspx.designer.cs">
+      <DependentUpon>PhoneListing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessDPI.aspx.cs">
+      <DependentUpon>ProcessDPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProcessDPI.aspx.designer.cs">
+      <DependentUpon>ProcessDPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectCalendar.aspx.cs">
+      <DependentUpon>ProjectCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectCalendar.aspx.designer.cs">
+      <DependentUpon>ProjectCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectCalendarPrint.aspx.cs">
+      <DependentUpon>ProjectCalendarPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectCalendarPrint.aspx.designer.cs">
+      <DependentUpon>ProjectCalendarPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RateTables.aspx.cs">
+      <DependentUpon>RateTables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RateTables.aspx.designer.cs">
+      <DependentUpon>RateTables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegionalMaintenance.aspx.cs">
+      <DependentUpon>RegionalMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegionalMaintenance.aspx.designer.cs">
+      <DependentUpon>RegionalMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportMasterPage.Master.cs">
+      <DependentUpon>ReportMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportMasterPage.Master.designer.cs">
+      <DependentUpon>ReportMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RouteMaintenance.aspx.cs">
+      <DependentUpon>RouteMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RouteMaintenance.aspx.designer.cs">
+      <DependentUpon>RouteMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftTurnOverReport.aspx.cs">
+      <DependentUpon>ShiftTurnOverReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShiftTurnOverReport.aspx.designer.cs">
+      <DependentUpon>ShiftTurnOverReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardSearch.aspx.cs">
+      <DependentUpon>DashboardSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardSearch.aspx.designer.cs">
+      <DependentUpon>DashboardSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMaintenance.aspx.cs">
+      <DependentUpon>CustomerMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerMaintenance.aspx.designer.cs">
+      <DependentUpon>CustomerMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardPrint.aspx.cs">
+      <DependentUpon>DashboardPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardPrint.aspx.designer.cs">
+      <DependentUpon>DashboardPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Email.aspx.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Email.aspx.designer.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMaintenance.aspx.cs">
+      <DependentUpon>EmployeeMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMaintenance.aspx.designer.cs">
+      <DependentUpon>EmployeeMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EssentialJobData.aspx.cs">
+      <DependentUpon>EssentialJobData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EssentialJobData.aspx.designer.cs">
+      <DependentUpon>EssentialJobData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobRecordPrint.aspx.cs">
+      <DependentUpon>JobRecordPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecordPrint.aspx.designer.cs">
+      <DependentUpon>JobRecordPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Permitting.aspx.cs">
+      <DependentUpon>Permitting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Permitting.aspx.designer.cs">
+      <DependentUpon>Permitting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuickReference.aspx.cs">
+      <DependentUpon>QuickReference.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuickReference.aspx.designer.cs">
+      <DependentUpon>QuickReference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceTransfer.aspx.cs">
+      <DependentUpon>ResourceTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResourceTransfer.aspx.designer.cs">
+      <DependentUpon>ResourceTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubContractorMaintenance.aspx.cs">
+      <DependentUpon>SubContractorMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubContractorMaintenance.aspx.designer.cs">
+      <DependentUpon>SubContractorMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testPage.aspx.cs">
+      <DependentUpon>testPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testPage.aspx.designer.cs">
+      <DependentUpon>testPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AutoCompleteTextBox.ascx.cs">
+      <DependentUpon>AutoCompleteTextBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AutoCompleteTextBox.ascx.designer.cs">
+      <DependentUpon>AutoCompleteTextBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CallCriteria\CallCriteriaInfo.ascx.cs">
+      <DependentUpon>CallCriteriaInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CallCriteria\CallCriteriaInfo.ascx.designer.cs">
+      <DependentUpon>CallCriteriaInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FirstAlertReport.aspx.cs">
+      <DependentUpon>FirstAlertReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FirstAlertReport.aspx.designer.cs">
+      <DependentUpon>FirstAlertReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\EquipmentRequested.ascx.cs">
+      <DependentUpon>EquipmentRequested.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\EquipmentRequested.ascx.designer.cs">
+      <DependentUpon>EquipmentRequested.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\AutoCompleteWebService.svc.cs">
+      <DependentUpon>AutoCompleteWebService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.Master.cs">
+      <DependentUpon>BasePage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePage.Master.designer.cs">
+      <DependentUpon>BasePage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage.master.cs">
+      <DependentUpon>ContentPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPage.master.designer.cs">
+      <DependentUpon>ContentPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="ContractDetail.aspx.cs">
+      <DependentUpon>ContractDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContractDetail.aspx.designer.cs">
+      <DependentUpon>ContractDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultPage.master.cs">
+      <DependentUpon>DefaultPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultPage.master.designer.cs">
+      <DependentUpon>DefaultPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="JobRecord.aspx.cs">
+      <DependentUpon>JobRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecord.aspx.designer.cs">
+      <DependentUpon>JobRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceAllocation.aspx.cs">
+      <DependentUpon>ResourceAllocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResourceAllocation.aspx.designer.cs">
+      <DependentUpon>ResourceAllocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SamplePage.aspx.cs">
+      <DependentUpon>SamplePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SamplePage.aspx.designer.cs">
+      <DependentUpon>SamplePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CollapseHolder.ascx.cs">
+      <DependentUpon>CollapseHolder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CollapseHolder.ascx.designer.cs">
+      <DependentUpon>CollapseHolder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DatePicker.ascx.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DatePicker.ascx.designer.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\CustomerInfo.ascx.cs">
+      <DependentUpon>CustomerInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\CustomerInfo.ascx.designer.cs">
+      <DependentUpon>CustomerInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\JobCallLog.ascx.cs">
+      <DependentUpon>JobCallLog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\JobCallLog.ascx.designer.cs">
+      <DependentUpon>JobCallLog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\JobDescription.ascx.cs">
+      <DependentUpon>JobDescription.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\JobDescription.ascx.designer.cs">
+      <DependentUpon>JobDescription.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\JobInfo.ascx.cs">
+      <DependentUpon>JobInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\JobInfo.ascx.designer.cs">
+      <DependentUpon>JobInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\LocationInfo.ascx.cs">
+      <DependentUpon>LocationInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\LocationInfo.ascx.designer.cs">
+      <DependentUpon>LocationInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\PermitInfo.ascx.cs">
+      <DependentUpon>PermitInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\PermitInfo.ascx.designer.cs">
+      <DependentUpon>PermitInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\PhotoReport.ascx.cs">
+      <DependentUpon>PhotoReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\JobRecord\PhotoReport.ascx.designer.cs">
+      <DependentUpon>PhotoReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\JSONService.svc.cs">
+      <DependentUpon>JSONService.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.Business\Hulcher.OneSource.CustomerService.Business.csproj">
+      <Project>{A56B9ACF-2D4E-439A-818F-C89718198395}</Project>
+      <Name>Hulcher.OneSource.CustomerService.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.Core\Hulcher.OneSource.CustomerService.Core.csproj">
+      <Project>{9DEF118E-D890-4218-A24C-5E954FB0CDC0}</Project>
+      <Name>Hulcher.OneSource.CustomerService.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.DataContext\Hulcher.OneSource.CustomerService.DataContext.csproj">
+      <Project>{3BE8A789-5B05-4BE6-BF72-1F9C3BF1E8D1}</Project>
+      <Name>Hulcher.OneSource.CustomerService.DataContext</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BasePage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DefaultPage.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ContentPage.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Default.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Testing.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\ShiftTurnOver.rdlc" />
+    <Content Include="Reports\ShiftTurnover_QuickReference.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\ShiftTurnoverPresetPotential.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\ContinuingJobsDPI.rdlc" />
+    <Content Include="Reports\FirstAlert.rdlc" />
+    <Content Include="Reports\NewJobsDPI.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>44419</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="Local" id="01386d2b-1bc2-48e7-96e2-172bec84721a" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>These are default test settings for a local test run.</Description>
+  <Deployment>
+    <DeploymentItem filename="Hulcher.OneSource.CustomerService.Test\Presenter Tests\Files\UploadSample.txt" />
+    <DeploymentItem filename="Hulcher.OneSource.CustomerService.Test\Presenter Tests\Files\Logo.png" />
+  </Deployment>
+  <Execution>
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="LocalMachineDefaultRole">
+      <DataCollectors>
+        <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+          <Configuration>
+            <CodeCoverage xmlns="">
+              <Regular>
+                <CodeCoverageItem binaryFile="Hulcher.OneSource.CustomerService.Business\bin\Debug\Hulcher.OneSource.CustomerService.Business.dll" pdbFile="Hulcher.OneSource.CustomerService.Business\bin\Debug\Hulcher.OneSource.CustomerService.Business.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Hulcher.OneSource.CustomerService.Core\bin\Debug\Hulcher.OneSource.CustomerService.Core.dll" pdbFile="Hulcher.OneSource.CustomerService.Core\bin\Debug\Hulcher.OneSource.CustomerService.Core.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Hulcher.OneSource.CustomerService.Data\bin\Debug\Hulcher.OneSource.CustomerService.Data.dll" pdbFile="Hulcher.OneSource.CustomerService.Data\bin\Debug\Hulcher.OneSource.CustomerService.Data.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Hulcher.OneSource.CustomerService.DynamicsImport\bin\Debug\Hulcher.OneSource.CustomerService.DynamicsImport.exe" pdbFile="Hulcher.OneSource.CustomerService.DynamicsImport\bin\Debug\Hulcher.OneSource.CustomerService.DynamicsImport.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Hulcher.OneSource.CustomerService.Integration\bin\Debug\Hulcher.OneSource.CustomerService.Integration.dll" pdbFile="Hulcher.OneSource.CustomerService.Integration\bin\Debug\Hulcher.OneSource.CustomerService.Integration.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Hulcher.OneSource.CustomerService.IVantageImport\bin\Debug\Hulcher.OneSource.CustomerService.IVantageImport.exe" pdbFile="Hulcher.OneSource.CustomerService.IVantageImport\bin\Debug\Hulcher.OneSource.CustomerService.IVantageImport.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Hulcher.OneSource.CustomerService.DossieImport\bin\Debug\Hulcher.OneSource.CustomerService.DossierImport.exe" pdbFile="Hulcher.OneSource.CustomerService.DossieImport\bin\Debug\Hulcher.OneSource.CustomerService.DossierImport.pdb" instrumentInPlace="true" />
+              </Regular>
+            </CodeCoverage>
+          </Configuration>
+        </DataCollector>
+      </DataCollectors>
+    </AgentRule>
+  </Execution>
+</TestSettings>

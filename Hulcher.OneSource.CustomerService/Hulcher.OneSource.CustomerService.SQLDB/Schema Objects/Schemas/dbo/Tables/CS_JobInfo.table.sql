@@ -1,0 +1,41 @@
+﻿CREATE TABLE [dbo].[CS_JobInfo](
+	[JobID] [int] NOT NULL,
+	[InitialCallDate] [date] NOT NULL,
+	[InitialCallTime] [time](7) NOT NULL,
+	[JobStatusID] [int] NOT NULL,
+	[JobStartDate] [date] NULL,
+	[PriceTypeID] [int] NOT NULL,
+	[JobCategoryID] [int] NOT NULL,
+	[DescriptiveAction] [varchar](50) NULL,
+	[InterimBill] [bit] NOT NULL,
+	[EmployeeID] [int] NOT NULL,
+	[JobCloseDate] [date] NULL,
+	[PresetInfoID] [int] NOT NULL,
+	[LostJobInfo] [int] NULL,
+	[FrequencyID] [int] NOT NULL,
+	[JobTypeID] [int] NOT NULL,
+	[JobActionID] [int] NOT NULL,
+	[CreatedBy] [varchar](50) NOT NULL,
+	[CreationDate] [datetime] NOT NULL,
+	[ModifiedBy] [varchar](50) NOT NULL,
+	[ModificationDate] [datetime] NOT NULL,
+	[Active] [bit] NOT NULL,
+ CONSTRAINT [PK_CS_JobInfo] PRIMARY KEY CLUSTERED 
+(
+	[JobID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY],
+ CONSTRAINT [UQ__CS_JobIn__056690E35224328E] UNIQUE NONCLUSTERED 
+(
+	[JobID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY],
+ CONSTRAINT [UQ__CS_JobIn__65CB46654F47C5E3] UNIQUE NONCLUSTERED 
+(
+	[PresetInfoID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY],
+ CONSTRAINT [UQ__CS_JobIn__BCF1D0104C6B5938] UNIQUE NONCLUSTERED 
+(
+	[LostJobInfo] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+

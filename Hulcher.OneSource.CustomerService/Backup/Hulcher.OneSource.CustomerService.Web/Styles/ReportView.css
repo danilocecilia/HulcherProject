@@ -1,0 +1,54 @@
+﻿.mainTitle
+{
+    display: inline-block; 
+    float: left; 
+    text-align: right; 
+    padding-bottom: 10px;
+    height: 20px;
+}
+
+.filter
+{
+    display: inline;
+    margin-right: 5px;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: right;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.control
+{
+    display: block;
+    float: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.control .viewtype
+{
+    display: inline-block;
+    float: left;
+    padding-right: 20px;
+}
+
+.control .combo
+{
+    display: inline-block;
+    float: left;
+}
+
+.control .button
+{
+    display: inline-block;
+    float: left;
+    padding-left: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}

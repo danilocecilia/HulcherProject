@@ -1,0 +1,1 @@
+ALTER TABLE dbo.CS_SpecialPricing ADD BidNumber VARCHAR(20) NULL

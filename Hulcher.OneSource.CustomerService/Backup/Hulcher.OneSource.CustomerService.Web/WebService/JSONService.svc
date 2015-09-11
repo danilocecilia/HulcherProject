@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Hulcher.OneSource.CustomerService.Web.WebService.JSONService" CodeBehind="JSONService.svc.cs" %>

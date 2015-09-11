@@ -1,0 +1,19 @@
+﻿.ScrollableGridView table {                      
+font: normal 11px "Trebuchet MS", Verdana, Arial;                                              
+background:#fff;                                 
+border:solid 1px #C2EAD6;
+}                
+                 
+.ScrollableGridView td{                  
+padding: 3px 3px 3px 6px;
+color: #5D829B;
+}
+
+.ScrollableGridView th 
+{
+font-weight:bold;
+font-size:smaller;
+color: #5D728A;                                             
+padding: 0px 3px 3px 6px;
+background: #CAE8EA                      
+}

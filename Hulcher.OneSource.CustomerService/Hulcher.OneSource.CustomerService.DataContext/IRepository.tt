@@ -1,0 +1,583 @@
+﻿<#@ template language="C#" debug="true" hostspecific="true"#>
+<#@ include file="EF.Utility.CS.ttinclude"#>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Diagnostics" #>
+
+<#@ output extension=".cs"#>
+<#
+
+// This needs to be set to the .edmx file that you want to process.
+string edmxFile = FindEDMXFileName(); // @"Model1.edmx";
+
+CodeGenerationTools code = new CodeGenerationTools(this);
+MetadataLoader loader = new MetadataLoader(this);
+MetadataTools ef = new MetadataTools(this);
+
+#>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.Objects;
+
+namespace <#= code.VsNamespaceSuggestion() #>
+{ 
+	public interface IRepository<T> 
+    {
+		IUnitOfWork UnitOfWork { get; set; }
+		T Add(T entity);
+		IList<T> AddList(IList<T> entity);
+		T Update(T entity);
+		IList<T> UpdateList(IList<T> entity);
+		IList<T> ListAll(params string[] includeList);
+		IList<T> ListAll(System.Linq.Expressions.Expression<Func<T, bool>> where, params string[] includeList);
+		IList<T> ListAll<TKey>(System.Linq.Expressions.Expression<Func<T, bool>> where, System.Linq.Expressions.Expression<Func<T,TKey>> orderby, bool ascending, params string[] includeList);
+		T Get(System.Linq.Expressions.Expression<Func<T, bool>> where, params string[] includeList);
+		void ExecuteSql(ObjectContext c, string sql);
+		T Get(System.Linq.Expressions.Expression<Func<T, bool>> myWhere, MergeOption option, params string[] includeList);
+    }
+}<#
+
+
+EdmItemCollection ItemCollection = loader.CreateEdmItemCollection(edmxFile);
+EntityContainer container = ItemCollection.GetItems<EntityContainer>().FirstOrDefault();
+EntityFrameworkTemplateFileManager fileManager = EntityFrameworkTemplateFileManager.Create(this);
+
+foreach (EntityType entity in ItemCollection.GetItems<EntityType>().OrderBy(e => e.Name))
+{;
+    fileManager.StartNewFile(entity.Name + "Repository.Generated.cs"); #>using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Data.Objects;
+
+// This file is auto generated and will be overwritten as soon as the template is executed
+// Do not modify this file...
+	
+namespace <#= code.VsNamespaceSuggestion() #>
+{   
+	<#=Accessibility.ForType(entity)#> <#=code.SpaceAfter(code.AbstractOption(entity))#>partial class <#=code.Escape(entity)#>Repository
+	{
+		private IRepository<<#=code.Escape(entity)#>> _repository {get;set;}
+		public IRepository<<#=code.Escape(entity)#>> Repository
+		{
+			get { return _repository; }
+			set { _repository = value; }
+		}
+		
+		public <#=code.Escape(entity)#>Repository(IRepository<<#=code.Escape(entity)#>> repository, IUnitOfWork unitOfWork)
+    	{
+    		Repository = repository;
+			Repository.UnitOfWork = unitOfWork;
+    	}
+
+		public <#=code.Escape(entity)#> Add(<#=code.Escape(entity)#> entity)
+		{
+			return Repository.Add(entity);
+		}
+
+		public IList<<#=code.Escape(entity)#>> AddList(IList<<#=code.Escape(entity)#>> entity)
+		{
+			return Repository.AddList(entity);
+		}
+
+		public <#=code.Escape(entity)#> Update(<#=code.Escape(entity)#> entity)
+		{
+			return Repository.Update(entity);
+		}
+		
+		public IList<<#=code.Escape(entity)#>> UpdateList(IList<<#=code.Escape(entity)#>> entity)
+		{
+			return Repository.UpdateList(entity);
+		}
+
+		public IList<<#=code.Escape(entity)#>> ListAll(params string[] includeList)
+		{
+			return Repository.ListAll(includeList);
+		}
+
+		public IList<<#=code.Escape(entity)#>> ListAll(System.Linq.Expressions.Expression<Func<<#=code.Escape(entity)#>, bool>> where, params string[] includeList)
+		{
+			return Repository.ListAll(where, includeList);
+		}
+
+		public IList<<#=code.Escape(entity)#>> ListAll<TKey>(System.Linq.Expressions.Expression<Func<<#=code.Escape(entity)#>, bool>> where, System.Linq.Expressions.Expression<Func<<#=code.Escape(entity)#>, TKey>> orderby, bool ascending, params string[] includeList)
+		{
+			return Repository.ListAll<TKey>(where, orderby, ascending, includeList);
+		}
+
+		public <#=code.Escape(entity)#> Get(System.Linq.Expressions.Expression<Func<<#=code.Escape(entity)#>, bool>> where, params string[] includeList)
+		{
+			return Repository.Get(where, includeList);
+		}
+
+		public void ExecuteSql(ObjectContext c, string sql)
+		{
+			Repository.ExecuteSql(c,sql);
+		}
+	}
+}<#	
+	if(!DoesFileExist(entity.Name + "Repository.cs"))
+	{
+		fileManager.StartNewFile(entity.Name + "Repository.cs");
+		#>using System;
+using System.Linq;
+using System.Collections.Generic;
+	
+namespace <#= code.VsNamespaceSuggestion() #>
+{   
+	<#=Accessibility.ForType(entity)#> <#=code.SpaceAfter(code.AbstractOption(entity))#>partial class <#=code.Escape(entity)#>Repository
+	{
+		// Add your own data access methods.
+		// This file should not get overridden
+	}
+}<#
+	}
+	else
+	{
+		fileManager.StartNewFile(entity.Name + "Repository.cs");
+		this.Write(OutputFile(entity.Name + "Repository.cs"));
+	}
+}
+
+fileManager.StartNewFile("IUnitOfWork.cs");
+#>using System;
+using System.Data.Objects;
+
+namespace <#= code.VsNamespaceSuggestion() #>
+{
+	public interface IUnitOfWork : IDisposable
+	{
+		ObjectContext Context { get; set; }
+		void Save();
+		bool LazyLoadingEnabled { get; set; }
+		bool ProxyCreationEnabled { get; set; }
+		string ConnectionString { get; set; }
+		System.Data.Objects.IObjectSet<T> CreateObjectSet<T>() where T : class;	
+		bool TryGetObjectStateEntry(object entity, out ObjectStateEntry stateEntry);
+        void ChangeObjectState(object entity, System.Data.EntityState entityState);
+	}
+}<#	fileManager.StartNewFile("RepositoryIQueryableExtensions.cs");
+#>using System.Data.Objects;
+using System.Linq;
+
+namespace <#= code.VsNamespaceSuggestion() #>
+{
+	public static class RepositoryIQueryableExtensions
+	{
+		public static IQueryable<T> Include<T>
+			(this IQueryable<T> source, string path)
+		{
+			var objectQuery = source as ObjectQuery<T>;
+			if (objectQuery != null)
+			{
+				return objectQuery.Include(path);
+			}
+			return source;
+		}
+	}
+}<# fileManager.StartNewFile("EFRepository.cs");
+#>using System;
+using System.Collections.Generic;
+using System.Data.Objects;
+using System.Linq;
+using System.Text;
+using System.Data.Common;
+using System.Data;
+using System.Reflection;
+using System.Data.Objects.DataClasses;
+using System.Data.Linq.Mapping;
+
+namespace <#= code.VsNamespaceSuggestion() #>
+{
+	public class EFRepository<T> : IRepository<T> where T : class
+	{
+		public IUnitOfWork UnitOfWork { get; set; }
+		private IObjectSet<T> _objectset;
+		private IObjectSet<T> ObjectSet
+		{
+			get
+			{
+				if (_objectset == null)
+				{
+					_objectset = UnitOfWork.CreateObjectSet<T>();
+				}
+				return _objectset;
+			}
+		}
+
+		public T Add(T entity)
+		{
+			 ObjectSet.AddObject(entity);
+             UnitOfWork.Save();
+             return entity;
+		}
+
+		public IList<T> AddList(IList<T> entityList)
+		{
+			 foreach (T entity in entityList)
+             {
+                 ObjectSet.AddObject(entity);
+             }
+             UnitOfWork.Save();
+             return entityList;
+		}
+
+		public T Update(T entity)
+		{
+			 ObjectStateEntry stateEntry = null;
+ 			 if (!UnitOfWork.TryGetObjectStateEntry(entity, out stateEntry))
+			 {
+                 ObjectSet.Attach(entity);
+             }
+             UnitOfWork.ChangeObjectState(entity, EntityState.Modified);			 
+             UnitOfWork.Save();
+             return entity;
+		}
+
+		public IList<T> UpdateList(IList<T> entityList)
+		{
+			foreach (T entity in entityList)
+            {
+				ObjectStateEntry stateEntry = null;
+ 				if (!UnitOfWork.TryGetObjectStateEntry(entity, out stateEntry))
+				{
+                    ObjectSet.Attach(entity);
+                }
+                UnitOfWork.ChangeObjectState(entity, EntityState.Modified);
+            }
+            UnitOfWork.Save();                
+            return entityList;
+		}
+
+				public IList<T> ListAll(params string[] includeList)
+		{
+            ObjectQuery<T> query = ObjectSet as ObjectQuery<T>;
+            if (query == null)
+                return ListAllForIObjectSet(includeList);
+            else
+                return ListAllForObjectSet(includeList);           
+		}
+
+        public IList<T> ListAllForObjectSet(params string[] includeList)
+        {
+			ObjectQuery<T> query = ObjectSet as ObjectQuery<T>;
+
+			for (int i = 0; i < includeList.Length; i++)
+				query = query.Include<T>(includeList[i]) as ObjectQuery<T>;
+
+			query.MergeOption = MergeOption.NoTracking;
+
+			IList<T> returnList = query.ToList<T>();
+
+			return returnList;
+        }
+
+        public IList<T> ListAllForIObjectSet(params string[] includeList)
+        {
+			IQueryable<T> query = ObjectSet;
+
+			for (int i = 0; i < includeList.Length; i++)
+				query = query.Include<T>(includeList[i]);
+
+			IList<T> returnList = query.ToList<T>();
+
+			return returnList;
+        }
+
+		public IList<T> ListAll(System.Linq.Expressions.Expression<Func<T, bool>> where, params string[] includeList)
+		{
+            ObjectQuery<T> query = ObjectSet.Where(where) as ObjectQuery<T>;
+
+            if (query == null)
+                return ListAllForIObjectSet(where, includeList);
+            else
+                return ListAllForObjectSet(where, includeList);
+		}
+
+        public IList<T> ListAllForObjectSet(System.Linq.Expressions.Expression<Func<T, bool>> where, params string[] includeList)
+        {
+			ObjectQuery<T> query = ObjectSet.Where(where) as ObjectQuery<T>;
+
+			for (int i = 0; i < includeList.Length; i++)
+				query = query.Include<T>(includeList[i]) as ObjectQuery<T>;
+
+			query.MergeOption = MergeOption.NoTracking;
+
+			IList<T> returnList = query.ToList<T>();
+
+			return returnList;
+        }
+
+        public IList<T> ListAllForIObjectSet(System.Linq.Expressions.Expression<Func<T, bool>> where, params string[] includeList)
+        {
+			IQueryable<T> query = ObjectSet.Where(where);
+
+			for (int i = 0; i < includeList.Length; i++)
+				query = query.Include<T>(includeList[i]);
+
+			IList<T> returnList = query.ToList<T>();
+
+			return returnList;
+        }
+
+		public IList<T> ListAll<TKey>(System.Linq.Expressions.Expression<Func<T, bool>> where, System.Linq.Expressions.Expression<Func<T,TKey>> orderby, bool ascending, params string[] includeList)
+		{
+            ObjectQuery<T> query = ObjectSet as ObjectQuery<T>;
+            if (query == null)
+                return ListAllForIObjectSet<TKey>(where, orderby, ascending, includeList);
+            else
+                return ListAllForObjectSet<TKey>(where, orderby, ascending, includeList);
+		}
+
+        public IList<T> ListAllForObjectSet<TKey>(System.Linq.Expressions.Expression<Func<T, bool>> where, System.Linq.Expressions.Expression<Func<T, TKey>> orderby, bool ascending, params string[] includeList)
+        {
+			ObjectQuery<T> query = ObjectSet as ObjectQuery<T>;
+
+			if (ascending)
+				query = query.Where(where).OrderBy(orderby) as ObjectQuery<T>;
+			else
+				query = query.Where(where).OrderByDescending(orderby) as ObjectQuery<T>;
+
+			for (int i = 0; i < includeList.Length; i++)
+				query = query.Include<T>(includeList[i]) as ObjectQuery<T>;
+
+			query.MergeOption = MergeOption.NoTracking;
+
+			IList<T> returnList = query.ToList<T>();
+
+			return returnList;
+        }
+
+        public IList<T> ListAllForIObjectSet<TKey>(System.Linq.Expressions.Expression<Func<T, bool>> where, System.Linq.Expressions.Expression<Func<T, TKey>> orderby, bool ascending, params string[] includeList)
+        {
+			IQueryable<T> query = ObjectSet;
+
+			if (ascending)
+				query = query.Where(where).OrderBy(orderby);
+			else
+				query = query.Where(where).OrderByDescending(orderby);
+
+			for (int i = 0; i < includeList.Length; i++)
+				query = query.Include<T>(includeList[i]);
+
+			IList<T> returnList = query.ToList<T>();
+
+			return returnList;
+        }
+
+		public T Get(System.Linq.Expressions.Expression<Func<T, bool>> myWhere, params string[] includeList)
+		{
+            ObjectQuery<T> query = ObjectSet.Where(myWhere) as ObjectQuery<T>;
+            if (query == null)
+                return GetForIObjectSet(myWhere, includeList);
+            else
+                return GetForObjectSet(myWhere, includeList);
+		}
+
+		public T Get(System.Linq.Expressions.Expression<Func<T, bool>> myWhere, MergeOption option, params string[] includeList)
+		{
+            ObjectQuery<T> query = ObjectSet.Where(myWhere) as ObjectQuery<T>;
+            if (query == null)
+                return GetForIObjectSet(myWhere, includeList);
+            else
+                return GetForObjectSet(myWhere, option, includeList);
+		}
+
+        public T GetForObjectSet(System.Linq.Expressions.Expression<Func<T, bool>> myWhere, MergeOption option, params string[] includeList)
+        {
+			ObjectQuery<T> query = ObjectSet.Where(myWhere) as ObjectQuery<T>;
+
+			for (int i = 0; i < includeList.Length; i++)
+				query = query.Include<T>(includeList[i]) as ObjectQuery<T>;
+
+			query.MergeOption = option;
+
+			T returnItem = query.FirstOrDefault();
+
+			return returnItem;
+        }
+
+		public T GetForObjectSet(System.Linq.Expressions.Expression<Func<T, bool>> myWhere, params string[] includeList)
+        {
+			ObjectQuery<T> query = ObjectSet.Where(myWhere) as ObjectQuery<T>;
+
+			for (int i = 0; i < includeList.Length; i++)
+				query = query.Include<T>(includeList[i]) as ObjectQuery<T>;
+
+			query.MergeOption = MergeOption.NoTracking;
+
+			T returnItem = query.FirstOrDefault();
+
+			return returnItem;
+        }
+
+        public T GetForIObjectSet(System.Linq.Expressions.Expression<Func<T, bool>> myWhere, params string[] includeList)
+        {
+			IQueryable<T> query = ObjectSet.Where(myWhere);
+			for (int i = 0; i < includeList.Length; i++)
+				query = query.Include<T>(includeList[i]);
+			T returnItem = query.FirstOrDefault();
+
+			return returnItem;
+        }
+
+		public void ExecuteSql(ObjectContext c, string sql)     
+        {         
+            var entityConnection = (System.Data.EntityClient.EntityConnection)c.Connection;         
+            DbConnection conn = entityConnection.StoreConnection;          
+            ConnectionState initialState = conn.State;        
+            try         
+            {             
+                if (initialState != ConnectionState.Open)                
+                    conn.Open();  // open connection if not already open             
+                using (DbCommand cmd = conn.CreateCommand())             
+                {                 
+                    cmd.CommandText = sql;                 
+                    cmd.ExecuteNonQuery();             
+                }        
+            }        
+            finally         
+            {            
+                if (initialState != ConnectionState.Open)                
+                    conn.Close(); // only close connection if not initially open         
+            }     
+        } 
+
+		private string GetPrimaryKeyName()
+        {
+            PropertyInfo[] properties = typeof(T).GetProperties();
+            foreach (PropertyInfo pI in properties)
+            {
+                System.Object[] attributes = pI.GetCustomAttributes(true);
+                foreach (object attribute in attributes)
+                {
+                    if (attribute is EdmScalarPropertyAttribute)
+                    {
+                        if ((attribute as EdmScalarPropertyAttribute).EntityKeyProperty == true)
+                            return pI.Name;
+                    }
+                    else if (attribute is ColumnAttribute)
+                    {
+
+                        if ((attribute as ColumnAttribute).IsPrimaryKey == true)
+                            return pI.Name;
+                    }
+                }
+            }
+            return null;
+        }
+	}
+}<#fileManager.StartNewFile("EFUnitOfWork.cs");
+#>using System.Data.Objects;
+
+namespace <#= code.VsNamespaceSuggestion() #>
+{
+	public class EFUnitOfWork : IUnitOfWork
+	{
+		public ObjectContext Context { get; set; }
+
+		public EFUnitOfWork()
+		{
+			Context = new <#=code.Escape(container)#>();
+		}
+
+		public void Save()
+		{
+			Context.SaveChanges();
+		}
+		
+		public bool LazyLoadingEnabled
+		{
+			get { return Context.ContextOptions.LazyLoadingEnabled; }
+			set { Context.ContextOptions.LazyLoadingEnabled = value;}
+		}
+
+		public bool ProxyCreationEnabled
+		{
+			get { return Context.ContextOptions.ProxyCreationEnabled; }
+			set { Context.ContextOptions.ProxyCreationEnabled = value; }
+		}
+		
+		public string ConnectionString
+		{
+			get { return Context.Connection.ConnectionString; }
+			set { Context.Connection.ConnectionString = value; }
+		}
+
+		public IObjectSet<T> CreateObjectSet<T>() where T : class
+        {
+            return this.Context.CreateObjectSet<T>();
+        }
+
+		public bool TryGetObjectStateEntry(object entity, out ObjectStateEntry stateEntry)
+		{
+			if (null != this.Context)
+				return this.Context.ObjectStateManager.TryGetObjectStateEntry(entity, out stateEntry);
+			else
+			{
+				stateEntry = null;
+				return false;
+			}
+		}
+
+		public void ChangeObjectState(object entity, System.Data.EntityState entityState)
+        {
+            if (null != this.Context)
+            {
+                this.Context.ObjectStateManager.ChangeObjectState(entity, entityState);
+            }
+        }
+
+		public void Dispose()
+		{
+			this.Context.Dispose();
+		}
+	}
+}<#	fileManager.Process();
+#>
+
+
+<#+
+
+bool DoesFileExist(string filename)
+{			
+	return File.Exists(Path.Combine(GetCurrentDirectory(),filename));	
+}
+
+string OutputFile(string filename)
+{
+	using(StreamReader sr = new StreamReader(Path.Combine(GetCurrentDirectory(),filename)))
+	{
+		string contents = sr.ReadToEnd();
+		return contents;
+	}
+}
+
+string GetCurrentDirectory()
+{
+	string executingDirectoryName = "";
+	string stackTraceFileName = new StackTrace(true).GetFrame(0).GetFileName();
+	if (String.IsNullOrEmpty(stackTraceFileName))
+	{
+		throw new ArgumentException("No value was specified for the 'directoryName' configuration parameter" +
+			", and we could not figure out the file name from the stack trace (most likely because of running " +
+			"the template with debug='False' specified in the <\u0023@ template \u0023> directive.");
+	}
+	else
+	{		
+		executingDirectoryName = Path.GetDirectoryName(stackTraceFileName);
+	}	
+	return executingDirectoryName;
+}
+
+string FindEDMXFileName()
+{
+	string edmxFile = "";
+				
+	string[] entityFrameworkFiles = Directory.GetFiles(GetCurrentDirectory(), "*.edmx");
+	if(entityFrameworkFiles.Length > 0)
+		edmxFile = entityFrameworkFiles[0];
+	
+	return edmxFile;
+}
+#>

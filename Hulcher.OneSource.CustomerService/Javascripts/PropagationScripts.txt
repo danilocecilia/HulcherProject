@@ -1,0 +1,233 @@
+    <%--<script type="text/javascript">
+
+        var canPropagateCustomerContact = true;
+        function PropagateCustomerContact() {
+            if (canPropagateCustomerContact) {
+                var selectedValue = document.getElementById('<%=actContactEssential.HiddenFieldValueClientID %>').value;
+                var selectedText = document.getElementById('<%=actContactEssential.TextControlClientID %>').value;
+
+                SetAutocompleteField(selectedText, selectedValue, 'actCustomerContact');
+            }
+        }
+
+        function UpdateCustomerContact(selectedText, selectedValue) {
+//            canPropagateCustomerContact = false;
+//            var customerContact = $find('actContactEssential');
+
+//            if (customerContact != null)
+//                customerContact.raiseItemSelected(new Sys.Extended.UI.AutoCompleteItemEventArgs(null, selectedText, selectedValue));
+
+//            canPropagateCustomerContact = true;
+        }
+
+        function PropagateHulcherContact() {
+            var selectedValue = document.getElementById('<%=actHulcherContactEssential.HiddenFieldValueClientID %>').value;
+            var selectedText = document.getElementById('<%=actHulcherContactEssential.TextControlClientID %>').value;
+
+            SetAutocompleteField(selectedText, selectedValue, 'actPOC');
+        }
+
+
+//        function PropagateCustomer() {
+//            var selectedValue = document.getElementById('< %=actCustomerEssential.HiddenFieldValueClientID %>').value;
+//            var selectedText = document.getElementById('< %=actCustomerEssential.TextControlClientID %>').value;
+//            var toValue = document.getElementById('< %= uscCustomer.CustomerHiddenFieldValueClientID %>').value;
+//            var customer = $find('actCustomer');
+
+//            if (customer != null && selectedValue != toValue)
+//                customer.raiseItemSelected(new Sys.Extended.UI.AutoCompleteItemEventArgs(null, selectedText, selectedValue));
+//        }
+
+       
+
+        function PropagateDivision() {
+            var selectedValue = document.getElementById('<%=actDivisionEssential.HiddenFieldValueClientID %>').value;
+            var selectedText = document.getElementById('<%=actDivisionEssential.TextControlClientID %>').value;
+
+            var division = $find('<%= uscCustomer.DivisionClientID %>');
+            var index = 0;
+            for (var i = 0; i < division._optionListItems.length; i++) {
+                if (division._optionListItems[i].text == selectedText) {
+                    index = i;
+                    break;
+                }
+            }
+
+            division.set_selectedIndex(index);
+            division.get_textBoxControl().value = selectedText;
+        }
+
+        var canPropagateJobStatus = true;
+        function PropagateJobStatus(webServiceResult) {
+            if (canPropagateJobStatus) {
+                var selectedValue = document.getElementById('<%=actJobStatusEssential.HiddenFieldValueClientID %>').value;
+                var selectedText = document.getElementById('<%=actJobStatusEssential.TextControlClientID %>').value;
+
+                var jobStatus = $find('<%= uscJobInfo.JobStatusClientID %>');
+                var index = 0;
+                for (var i = 0; i < jobStatus._optionListItems.length; i++) {
+                    if (jobStatus._optionListItems[i].text == selectedText) {
+                        index = i;
+                        break;
+                    }
+                }
+
+                jobStatus.set_selectedIndex(index);
+                jobStatus.get_textBoxControl().value = selectedText;
+            }
+        }
+
+        function UpdateJobStatus(selectedText, selectedValue) {
+            canPropagateJobStatus = false;
+            var jobStatus = $find('actJobStatusEssential');
+
+            if (jobStatus != null)
+                jobStatus.raiseItemSelected(new Sys.Extended.UI.AutoCompleteItemEventArgs(null, selectedText, selectedValue));
+
+            canPropagateJobStatus = true;
+        }
+
+        var canPropagateState = true;
+        var isPropagatingState = false;
+        function PropagateState(WebServiceResult) {
+            if (canPropagateState) {
+                isPropagatingState = true;
+                var selectedValue = document.getElementById('<%=actStateEssential.HiddenFieldValueClientID %>').value;
+                var selectedText = document.getElementById('<%=actStateEssential.TextControlClientID %>').value;
+                var state = $find('<%= uscLocation.StateBehaviorID %>');
+                var toValue = document.getElementById('<%= uscLocation.StateHiddenFieldValueClientID %>').value;
+
+                if (state != null && selectedValue != toValue)
+                    state.raiseItemSelected(new Sys.Extended.UI.AutoCompleteItemEventArgs(null, selectedText, selectedValue));
+
+                SetFocusToCityEssential(WebServiceResult);
+                isPropagatingState = false;
+            }
+        }
+
+        function PropagateStateUp(WebServiceResult) {
+            if (!isPropagatingState) {
+                canPropagateState = false;
+                var selectedValue = document.getElementById('<%=uscLocation.StateHiddenFieldValueClientID %>').value;
+                var selectedText = document.getElementById('<%=uscLocation.StateTextControlClientID %>').value;
+                var state = $find('actStateEssential');
+                var toValue = document.getElementById('<%= actStateEssential.HiddenFieldValueClientID %>').value;
+
+                if (state != null && selectedValue != toValue)
+                    state.raiseItemSelected(new Sys.Extended.UI.AutoCompleteItemEventArgs(null, selectedText, selectedValue));
+
+                SetFocusToCity(WebServiceResult);
+
+                canPropagateState = true;
+            }
+        }
+
+//        var canPropagateCity = true;
+//        function PropagateCity(WebServiceResult) {
+//            if (canPropagateCity) {
+//                var selectedValue = document.getElementById('< %=actCityEssential.HiddenFieldValueClientID %>').value;
+//                var selectedText = document.getElementById('< %=actCityEssential.TextControlClientID %>').value;
+//                var city = $find('< %= uscLocation.CityBehaviorID %>');
+//                var toValue = document.getElementById('< %= uscLocation.CityHiddenFieldValueClientID %>').value;
+
+//                if (city != null && selectedValue != toValue)
+//                    city.raiseItemSelected(new Sys.Extended.UI.AutoCompleteItemEventArgs(null, selectedText, selectedValue));
+
+//                CallCityWebServiceEssential(WebServiceResult);
+//            }
+//        }
+
+//        function PropagateCityUp() {
+//            canPropagateCity = false;
+//            var selectedValue = document.getElementById('< %=uscLocation.CityHiddenFieldValueClientID %>').value;
+//            var selectedText = document.getElementById('< %=uscLocation.CityTextControlClientID %>').value;
+//            var city = $find('actCityEssential');
+//            var toValue = document.getElementById('< %= actCityEssential.HiddenFieldValueClientID %>').value;
+
+//            if (city != null && selectedValue != toValue)
+//                city.raiseItemSelected(new Sys.Extended.UI.AutoCompleteItemEventArgs(null, selectedText, selectedValue));
+
+//            canPropagateCity = true;
+//        }
+
+        var canPropagatePriceType = true;
+        function PropagatePriceType(WebServiceResult) {
+
+            if (canPropagatePriceType) {
+                var selectedValue = document.getElementById('<%=actPriceTypeEssential.HiddenFieldValueClientID %>').value;
+                var selectedText = document.getElementById('<%=actPriceTypeEssential.TextControlClientID %>').value;
+
+                var priceType = $find('<%= uscJobInfo.PriceTypeClientID %>');
+                var index = 0;
+                for (var i = 0; i < priceType._optionListItems.length; i++) {
+                    if (priceType._optionListItems[i].text == selectedText) {
+                        index = i;
+                        break;
+                    }
+                }
+
+                priceType.set_selectedIndex(index);
+                priceType.get_textBoxControl().value = selectedText;
+            }
+        }
+
+        function UpdatePriceType(selectedText, selectedValue) {
+            canPropagatePriceType = false;
+            var priceType = $find('actPriceTypeEssential');
+
+            if (priceType != null)
+                priceType.raiseItemSelected(new Sys.Extended.UI.AutoCompleteItemEventArgs(null, selectedText, selectedValue));
+            canPropagatePriceType = true;
+        }
+
+//        function PropagateDate() {
+//            var selectedValue = document.getElementById('< %= dpCallDateEssential.TextBoxClientID %>').value;
+//            var date = document.getElementById('< %= uscJobInfo.CallDateTextBoxClientID %>');
+//            var toValue = date.value;
+
+//            if (date != null && selectedValue != toValue)
+//                date.value = selectedValue;
+//        }
+
+//        function PropagateTime() {
+//            var selectedValue = document.getElementById('< %= txtCallTimeEssential.ClientID %>').value;
+//            var time = document.getElementById('< %= uscJobInfo.CallTimeTextBoxClientID %>');
+//            var toValue = time.value;
+
+//            if (time != null && selectedValue != toValue)
+//                time.value = selectedValue;
+//        }
+
+        var canPropagateZipCode = true;
+        function PropagateZipCode(WebServiceResult) {
+            if (canPropagateZipCode) {
+                var selectedValue = document.getElementById('<%=actZipCodeEssential.HiddenFieldValueClientID %>').value;
+                var selectedText = document.getElementById('<%=actZipCodeEssential.TextControlClientID %>').value;
+                var city = $find('<%= uscLocation.ZipCodeBehaviorID %>');
+                var toValue = document.getElementById('<%= uscLocation.ZipCodeHiddenFieldValueClientID %>').value;
+
+                if (city != null && selectedValue != toValue)
+                    city.raiseItemSelected(new Sys.Extended.UI.AutoCompleteItemEventArgs(null, selectedText, selectedValue));
+            }
+        }
+
+        function PropagateZipCopdeUp(WebServiceResult) {
+            canPropagateZipCode = false;
+            var selectedValue = document.getElementById('<%=uscLocation.ZipCodeHiddenFieldValueClientID %>').value;
+            var selectedText = document.getElementById('<%=uscLocation.ZipCodeTextControlClientID %>').value;
+            var zipCode = $find('actZipCodeEssential');
+            var toValue = document.getElementById('<%= actZipCodeEssential.HiddenFieldValueClientID %>').value;
+
+            if (zipCode != null && selectedValue != toValue)
+                zipCode.raiseItemSelected(new Sys.Extended.UI.AutoCompleteItemEventArgs(null, selectedText, selectedValue));
+
+            canPropagateZipCode = true;
+        }
+
+        function CheckScopeOfWorkHasValue(id) {
+
+            var text = document.getElementById(id).value;
+
+            if (text == "")
+                return false;
+        }--%>

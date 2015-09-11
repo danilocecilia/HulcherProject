@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B9A0D44-7C47-4CDA-946D-E6ADAFADB482}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hulcher.OneSource.CustomerService.Data</RootNamespace>
+    <AssemblyName>Hulcher.OneSource.CustomerService.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Testing|AnyCPU'">
+    <OutputPath>bin\Testing\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDao.cs" />
+    <Compile Include="CallLogDao.cs" />
+    <Compile Include="CallTypeDao.cs" />
+    <Compile Include="CityDao.cs" />
+    <Compile Include="CompetitorDao.cs" />
+    <Compile Include="ContactDao.cs" />
+    <Compile Include="CustomerContractDao.cs" />
+    <Compile Include="CustomerDao.cs" />
+    <Compile Include="CustomerInfoDao.cs" />
+    <Compile Include="DivisionDao.cs" />
+    <Compile Include="EmergencyContactDao.cs" />
+    <Compile Include="EmployeeDao.cs" />
+    <Compile Include="EmployeeInfoDao.cs" />
+    <Compile Include="EquipmentDao.cs" />
+    <Compile Include="EquipmentInfoDao.cs" />
+    <Compile Include="EquipmentTypeDao.cs" />
+    <Compile Include="FrequencyDao.cs" />
+    <Compile Include="JobActionDao.cs" />
+    <Compile Include="JobCategoryDao.cs" />
+    <Compile Include="JobDao.cs" />
+    <Compile Include="CountryDao.cs" />
+    <Compile Include="JobDescriptionDao.cs" />
+    <Compile Include="JobDivisionDao.cs" />
+    <Compile Include="JobInfoDao.cs" />
+    <Compile Include="JobPermitDao.cs" />
+    <Compile Include="JobPhotoReportDao.cs" />
+    <Compile Include="JobStatusDao.cs" />
+    <Compile Include="JobTypeDao.cs" />
+    <Compile Include="LocationInfoDao.cs" />
+    <Compile Include="LostJobDao.cs" />
+    <Compile Include="LostJobReasonDao.cs" />
+    <Compile Include="LumpSumPerDao.cs" />
+    <Compile Include="PresetInfoDao.cs" />
+    <Compile Include="PriceTypeDao.cs" />
+    <Compile Include="PrimaryCallTypeDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReserveDao.cs" />
+    <Compile Include="ReserveEquipmentDao.cs" />
+    <Compile Include="ResourceDao.cs" />
+    <Compile Include="ResourceTypeDao.cs" />
+    <Compile Include="ScopeOfWorkDao.cs" />
+    <Compile Include="SettingsDao.cs" />
+    <Compile Include="SpecialPricingDao.cs" />
+    <Compile Include="StateDao.cs" />
+    <Compile Include="ZipCodeDao.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.DataContext\Hulcher.OneSource.CustomerService.DataContext.csproj">
+      <Project>{3BE8A789-5B05-4BE6-BF72-1F9C3BF1E8D1}</Project>
+      <Name>Hulcher.OneSource.CustomerService.DataContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.Core\Hulcher.OneSource.CustomerService.Core.csproj">
+      <Project>{9DEF118E-D890-4218-A24C-5E954FB0CDC0}</Project>
+      <Name>Hulcher.OneSource.CustomerService.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

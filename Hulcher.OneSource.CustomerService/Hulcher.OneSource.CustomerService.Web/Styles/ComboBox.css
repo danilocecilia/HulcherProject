@@ -1,0 +1,41 @@
+﻿.CustomComboBoxStyle .ajax__combobox_textboxcontainer input {
+    background-color: #ADD8E6;
+    border: solid 1px Blue;
+    border-right: 0px none;
+}
+.CustomComboBoxStyle .ajax__combobox_buttoncontainer button {
+    background-color: #ADD8E6;
+    border: solid 1px Blue;
+}
+
+.WindowsStyle .ajax__combobox_textboxcontainer input
+{
+    border-color: #7F9DB9 transparent #7F9DB9 #7F9DB9;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    font-size: 13px;
+    height: 18px;
+    margin: 0;
+    padding: 1px 0 0 5px;
+}
+
+.WindowsStyle .ajax__combobox_buttoncontainer button
+{
+    background-image: url("/images/comboBox/windows-arrow.gif");
+    background-position: left top;
+    border: 0 none;
+    height: 21px !important;
+    margin: 0;
+    padding: 0;
+    width: 21px !important;
+    visibility: Hidden;
+    display: block;
+}
+
+.WindowsStyle .ajax__combobox_itemlist 
+{
+    border-color: #7F9DB9;
+    width:200px !important;
+    height:auto !important;
+    max-height: 120px !important;
+}

@@ -1,0 +1,11 @@
+C:\Users\Danilo\Desktop\Projeto\Hulcher.OneSource.CustomerService\Hulcher.OneSource.CustomerService.DataContext\bin\Debug\Hulcher.OneSource.CustomerService.DataContext.dll.config
+C:\Users\Danilo\Desktop\Projeto\Hulcher.OneSource.CustomerService\Hulcher.OneSource.CustomerService.DataContext\bin\Debug\Hulcher.OneSource.CustomerService.DataContext.dll
+C:\Users\Danilo\Desktop\Projeto\Hulcher.OneSource.CustomerService\Hulcher.OneSource.CustomerService.DataContext\bin\Debug\Hulcher.OneSource.CustomerService.DataContext.pdb
+C:\Users\Danilo\Desktop\Projeto\Hulcher.OneSource.CustomerService\Hulcher.OneSource.CustomerService.DataContext\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Danilo\Desktop\Projeto\Hulcher.OneSource.CustomerService\Hulcher.OneSource.CustomerService.DataContext\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Danilo\Desktop\Projeto\Hulcher.OneSource.CustomerService\Hulcher.OneSource.CustomerService.DataContext\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Danilo\Desktop\Projeto\Hulcher.OneSource.CustomerService\Hulcher.OneSource.CustomerService.DataContext\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Danilo\Desktop\Projeto\Hulcher.OneSource.CustomerService\Hulcher.OneSource.CustomerService.DataContext\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\Danilo\Desktop\Projeto\Hulcher.OneSource.CustomerService\Hulcher.OneSource.CustomerService.DataContext\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Danilo\Desktop\Projeto\Hulcher.OneSource.CustomerService\Hulcher.OneSource.CustomerService.DataContext\obj\Debug\Hulcher.OneSource.CustomerService.DataContext.dll
+C:\Users\Danilo\Desktop\Projeto\Hulcher.OneSource.CustomerService\Hulcher.OneSource.CustomerService.DataContext\obj\Debug\Hulcher.OneSource.CustomerService.DataContext.pdb

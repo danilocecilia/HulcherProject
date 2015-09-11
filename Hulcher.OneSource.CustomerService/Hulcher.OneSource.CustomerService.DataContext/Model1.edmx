@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OneSourceModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="OneSourceModel1StoreContainer">
+          <EntitySet Name="CS_CallCriteria" EntityType="OneSourceModel1.Store.CS_CallCriteria" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="CS_CallCriteria">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="ContactID" Type="int" />
+          <Property Name="ModifiedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CreationID" Type="int" />
+          <Property Name="ModificationID" Type="int" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="ModificationDate" Type="datetime" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="DivisionID" Type="int" />
+          <Property Name="CustomerID" Type="int" />
+          <Property Name="SystemWideLevel" Type="varchar" MaxLength="50" />
+          <Property Name="Notes" Type="varchar" MaxLength="255" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OneSourceModel1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="OneSourceEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CS_CallCriteria" EntityType="OneSourceModel1.CS_CallCriteria" />
+        </EntityContainer>
+        <EntityType Name="CS_CallCriteria">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="ContactID" Type="Int32" />
+          <Property Name="ModifiedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreationID" Type="Int32" />
+          <Property Name="ModificationID" Type="Int32" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" />
+          <Property Name="ModificationDate" Type="DateTime" Nullable="false" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="DivisionID" Type="Int32" />
+          <Property Name="CustomerID" Type="Int32" />
+          <Property Name="SystemWideLevel" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Notes" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OneSourceModel1StoreContainer" CdmEntityContainer="OneSourceEntities">
+          <EntitySetMapping Name="CS_CallCriteria"><EntityTypeMapping TypeName="OneSourceModel1.CS_CallCriteria"><MappingFragment StoreEntitySet="CS_CallCriteria">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+            <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+            <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="CreationID" ColumnName="CreationID" />
+            <ScalarProperty Name="ModificationID" ColumnName="ModificationID" />
+            <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+            <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+            <ScalarProperty Name="Active" ColumnName="Active" />
+            <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+            <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="SystemWideLevel" ColumnName="SystemWideLevel" />
+            <ScalarProperty Name="Notes" ColumnName="Notes" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="OneSourceModel1.CS_CallCriteria" Width="1.5" PointX="0.75" PointY="0.75" Height="3.7109993489583326" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

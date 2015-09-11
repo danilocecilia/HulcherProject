@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Service1.asmx.cs" Class="Hulcher.OneSource.CustomerService.AutoCompleteWebService.Service1" %>

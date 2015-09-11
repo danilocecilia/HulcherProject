@@ -1,0 +1,2 @@
+obj\Debug\_Hulcher.OneSource.CustomerService.Business.g.cs
+obj\Debug\JobLifecycle.g.cs

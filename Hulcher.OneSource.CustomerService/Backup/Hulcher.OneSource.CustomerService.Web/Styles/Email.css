@@ -1,0 +1,29 @@
+﻿.Row
+{
+    display: inline-block;
+    text-align: left;
+}
+
+.Row .labels2
+{
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-top: 3px;
+    margin-right: 3px;
+    display: inline;
+}
+
+.Row .controls
+{
+    float: left;
+    width: 99%;
+    text-align: left;
+    margin-top: 2px;
+}
+
+.Row .maxHeight
+{
+    max-height: 60px;
+    overflow: auto;
+}

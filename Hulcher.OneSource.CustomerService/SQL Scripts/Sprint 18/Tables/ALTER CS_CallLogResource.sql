@@ -1,0 +1,1 @@
+ALTER TABLE dbo.CS_CallLogResource ADD ActionDate DATETIME NULL

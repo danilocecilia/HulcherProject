@@ -1,0 +1,23 @@
+﻿.width100 { width: 100%; }
+.marginBottom5 { margin-bottom: 5px; }
+.inlineBlock { display: inline-block; }
+.attributes{ width: 100%; display: inline-block; }
+.column20SubTitles { display: inline-block; width: 20%; float: left; padding: 4px 0px 4px 4px; background-color: #dddddd; font-weight: bold; height: 20px; }
+.column18SubTitles { display: block; width: 18%; float: left; padding: 4px 0px 4px 4px; background-color: #dddddd; font-weight: bold; height: 20px; }
+.column20Fields { display: inline-block; width: 20%; float: left; padding: 2px 2px 2px 2px; min-height: 20px; }
+.column18Fields { display: block; width: 18%; float: left; padding: 2px 2px 2px 2px; min-height: 20px; }
+.callCriteriaField { display: block; }
+.column20CallTypes { display: inline-block; width: 20%; float: left; }
+.column18CallTypes { display: block; width: 18%; float: left; }
+.callTypesSubTitles { display: block; padding: 4px 0px 4px 4px; background-color: #dddddd; font-weight: bold; height: 30px; }
+.selectAllCallTypes { padding: 2px 2px 2px 2px; display: block; font-weight: bold; }
+.callTypeList { padding: 2px 2px 2px 2px; margin-left: 10px; }
+.rightLineTitle { border-right: 1px solid #000000; }
+.rightLine { min-height: 370px !important; border-right: 1px solid #000000;  }
+.rightLineCallType { min-height: 305px !important; border-right: 1px solid #000000;  }
+.autoCompleteRemove { display: block; text-align: right; width: 100%; padding-top: 3px; padding-right: 3px; }
+.autoCompleteSelectedList { padding-top: 3px; padding-right: 3px; }
+.ui-multiselect { padding:2px 0 2px 4px; width:100% !important; text-align:left; }
+.ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000; width: 250px !important; }
+.radioHeader { display: inline-block; width: 120px; float: left; }
+.autocompleteHeader { display: inline-block; width: 350px; float: left; }

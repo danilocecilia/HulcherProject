@@ -1,0 +1,7 @@
+﻿ALTER TABLE [dbo].[CS_City]  WITH CHECK ADD  CONSTRAINT [FK_CS_City_CS_State] FOREIGN KEY([StateID])
+REFERENCES [dbo].[CS_State] ([ID])
+
+
+GO
+ALTER TABLE [dbo].[CS_City] CHECK CONSTRAINT [FK_CS_City_CS_State]
+

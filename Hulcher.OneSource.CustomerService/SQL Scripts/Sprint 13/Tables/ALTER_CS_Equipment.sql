@@ -1,0 +1,1 @@
+ALTER TABLE dbo.CS_Equipment ADD DisplayInResourceAllocation BIT NOT NULL DEFAULT 0

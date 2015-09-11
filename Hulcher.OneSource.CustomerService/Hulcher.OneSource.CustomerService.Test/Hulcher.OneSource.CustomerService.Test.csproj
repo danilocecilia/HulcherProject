@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA357BE0-423F-4840-BCAA-4A06A9F3737F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hulcher.OneSource.CustomerService.Test</RootNamespace>
+    <AssemblyName>Hulcher.OneSource.CustomerService.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>True</IsCodedUITest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Testing|AnyCPU'">
+    <OutputPath>bin\Testing\</OutputPath>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' Or '$(VisualStudioVersion)' == '11.0'">
+      <ItemGroup>
+        <Reference Include="UIAutomationTypes" />
+      </ItemGroup>
+    </When>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Engine" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Schema" />
+    <Reference Include="Microsoft.Data.Schema.UnitTesting" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+    <Reference Include="Moq">
+      <HintPath>..\Libraries\Moq\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DossierIntegrationTests\DossierIntegrationTest.cs" />
+    <Compile Include="DynamicsIntegrationTests\DynamicsIntegrationTest.cs" />
+    <Compile Include="ExtensionTests\JobExtensionTest.cs" />
+    <Compile Include="ExtensionTests\JobInfoExtensionTest.cs" />
+    <Compile Include="IVantageIntegrationTests\IVantageIntegrationTest.cs" />
+    <Compile Include="Model Tests\CallCriteriaModelTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model Tests\CallLogModelTest.cs" />
+    <Compile Include="Model Tests\CustomerModelTest.cs" />
+    <Compile Include="Model Tests\DivisionModelTest.cs" />
+    <Compile Include="Model Tests\DPIModelTest.cs" />
+    <Compile Include="Model Tests\EmailModelTest.cs" />
+    <Compile Include="Model Tests\EmployeeModelTest.cs" />
+    <Compile Include="Model Tests\EquipmentModelTest.cs" />
+    <Compile Include="Model Tests\FirstAlertModelTest.cs" />
+    <Compile Include="Model Tests\JobModelTest.cs" />
+    <Compile Include="Model Tests\LocationModelTest.cs" />
+    <Compile Include="Model Tests\ResourceAllocationModelTest.cs" />
+    <Compile Include="Model Tests\SettingsModelTest.cs" />
+    <Compile Include="Presenter Tests\CallCriteriaInfoPresenterTest.cs" />
+    <Compile Include="Presenter Tests\CallEntryPresenterTest.cs" />
+    <Compile Include="Presenter Tests\DashboardPresenterTest.cs" />
+    <Compile Include="Presenter Tests\DashboardPrintPresenterTest.cs" />
+    <Compile Include="Presenter Tests\EmployeeMaintenancePresenterTest.cs" />
+    <Compile Include="Presenter Tests\FirstAlertPresenterTest.cs" />
+    <Compile Include="Presenter Tests\JobCallLogPresenterTest.cs" />
+    <Compile Include="Presenter Tests\JobRecordPresenterTest.cs" />
+    <Compile Include="Presenter Tests\PermitInfoPresenterTest.cs" />
+    <Compile Include="Presenter Tests\PermittingPresenterTest.cs" />
+    <Compile Include="Presenter Tests\PhotoReportPresenterTest.cs" />
+    <Compile Include="Presenter Tests\ResourceAllocationPresenterTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIMap.cs">
+      <DependentUpon>UIMap.uitest</DependentUpon>
+    </Compile>
+    <Compile Include="UIMap.Designer.cs">
+      <DependentUpon>UIMap.uitest</DependentUpon>
+    </Compile>
+    <Compile Include="UtilTests\QueryStringBuilderTest.cs" />
+    <Compile Include="UtilTests\WebUtilTest.cs" />
+    <Compile Include="ViewModel Tests\CallEntryViewModelTest.cs" />
+    <Compile Include="ViewModel Tests\DashboardViewModelTest.cs" />
+    <Compile Include="ViewModel Tests\FirstAlertViewModelTest.cs" />
+    <Compile Include="ViewModel Tests\PermittingViewModelTests.cs" />
+    <Compile Include="ViewModel Tests\ResourceAllocationViewModelTest.cs" />
+    <Compile Include="WebServicesTests\AutoCompleteTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.Business\Hulcher.OneSource.CustomerService.Business.csproj">
+      <Project>{A56B9ACF-2D4E-439A-818F-C89718198395}</Project>
+      <Name>Hulcher.OneSource.CustomerService.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.Core\Hulcher.OneSource.CustomerService.Core.csproj">
+      <Project>{9DEF118E-D890-4218-A24C-5E954FB0CDC0}</Project>
+      <Name>Hulcher.OneSource.CustomerService.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.DataContext\Hulcher.OneSource.CustomerService.DataContext.csproj">
+      <Project>{3BE8A789-5B05-4BE6-BF72-1F9C3BF1E8D1}</Project>
+      <Name>Hulcher.OneSource.CustomerService.DataContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.Integration\Hulcher.OneSource.CustomerService.Integration.csproj">
+      <Project>{B0455EF8-5C57-4C0C-A1F8-5825C5CC8058}</Project>
+      <Name>Hulcher.OneSource.CustomerService.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.Web\Hulcher.OneSource.CustomerService.Web.csproj">
+      <Project>{DD82BFD3-CFA3-4330-81ED-BE4B6696DBA5}</Project>
+      <Name>Hulcher.OneSource.CustomerService.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UIMap.uitest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presenter Tests\Files\Logo.png" />
+    <Content Include="Presenter Tests\Files\UploadSample.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Automated Tests\Job Records\" />
+    <Folder Include="DynamicWebControlsTests\" />
+    <Folder Include="View Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

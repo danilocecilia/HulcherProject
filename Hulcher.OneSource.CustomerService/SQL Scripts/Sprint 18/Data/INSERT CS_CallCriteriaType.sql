@@ -1,0 +1,1 @@
+INSERT CS_CallCriteriaType VALUES (20, 'White Light', 'system', 'system', 0, 0, GETDATE(), GETDATE(), 1)

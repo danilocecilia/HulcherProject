@@ -1,0 +1,7 @@
+﻿ALTER TABLE [dbo].[CS_ZipCode]  WITH CHECK ADD  CONSTRAINT [FK_CS_ZipCode_CS_City] FOREIGN KEY([CityId])
+REFERENCES [dbo].[CS_City] ([ID])
+
+
+GO
+ALTER TABLE [dbo].[CS_ZipCode] CHECK CONSTRAINT [FK_CS_ZipCode_CS_City]
+

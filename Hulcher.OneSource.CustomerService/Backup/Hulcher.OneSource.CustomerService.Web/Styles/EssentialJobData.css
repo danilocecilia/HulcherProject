@@ -1,0 +1,74 @@
+﻿.Header
+{
+    background-color:#C8D6E6;
+    color:#000000;
+    padding:5px 5px 5px 5px;
+    margin: 0px 0px 0px 0px;
+    border: 1px solid #3475CD;    
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+}
+
+.Content
+{
+    background-color: #FFFFFF; 
+    padding:5px 5px 5px 5px;
+    margin: 0px 0px 0px 0px;
+    border-left: 1px solid #3475CD;
+    border-right: 1px solid #3475CD;
+    border-bottom: 1px solid #3475CD;
+}
+
+.Row
+{
+    display: inline-block;
+    text-align: center;
+}
+
+.Row .Left
+{
+    float: left;
+    text-align: left;
+    width: 49%;
+}
+
+.Row .Right
+{
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+.Row .labels
+{
+    float: left;
+    width: 69px;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+.Row .labels2
+{
+    float: left;
+    width: 69px;
+    text-align: right;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.Row .controls
+{
+    float: left;
+    width: 160px;
+    text-align: left;
+    margin-top: 7px;
+}
+
+.scopeLabel
+{
+    float: left;
+    text-align: left;
+    margin-left: 1%;
+}

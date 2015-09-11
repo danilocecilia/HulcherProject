@@ -1,0 +1,202 @@
+﻿table.ProjectCalendar
+{
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background-color: #CDCDCD;
+    font-family: arial;
+    font-size: 8pt;
+    text-align: left;
+    width: 100%;
+}
+
+table.ProjectCalendar tr th
+{
+    text-align: center;
+    background-color: White;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 2px solid grey;
+    font-size: 14px;
+    top: expression(this.offsetParent.scrollTop);
+    left: expression(this.offsetParent.style.left);
+    position: relative;
+    z-index: 999;
+}
+
+table.ProjectCalendar tr th div
+{
+    width: 183px;
+}
+
+table.ProjectCalendar tr td
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: White;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    font-weight:bold;
+}
+
+table.ProjectCalendar tr td.Division
+{
+    background-color: rgb(176, 176, 176);
+    font-weight: bold;
+}
+
+table.ProjectCalendar tr th.BorderRight
+{
+    border-right: 2px solid grey;
+}
+
+table.ProjectCalendar tr td.PaintJob
+{
+    font-weight: bold;
+    background-color: rgb(238, 238, 238);
+}
+
+table.ProjectCalendar tr td.ResourceWorked
+{
+    background-color: #afb7e9;
+    font-weight: bold;
+}
+
+table.ProjectCalendar tr td.ResourceEstimated
+{
+    border-top: 1px dotted #08366d;
+    border-bottom: 1px dotted #08366d;
+}
+
+table.ProjectCalendar tr td.ResourceEstimatedStart
+{
+    border-left: 1px dotted #08366d;
+    border-top: 1px dotted #08366d;
+    border-bottom: 1px dotted #08366d;
+}
+
+table.ProjectCalendar tr td.ResourceEstimatedEnd
+{
+    border-right: 1px dotted #08366d;
+    border-top: 1px dotted #08366d;
+    border-bottom: 1px dotted #08366d;
+}
+
+table.ProjectCalendar tr td.Reserved
+{
+    background-color: #E4FCF0;
+    font-weight: bold;
+}
+
+table.ProjectCalendar tr td.Resource.Employee
+{  
+    color:Black;
+}
+
+table.ProjectCalendar tr td.Resource.Equipment
+{
+    color:blue;
+}
+
+table.ProjectCalendar tr td.Resource.AddEmployee
+{  
+    color:red;
+}
+
+table.ProjectCalendar tr td.Resource.AddEquipment
+{
+    color:green;
+}
+
+.ProjectCalendar_HeaderDiv
+{
+    margin-top: 10px;
+    margin-right: 18px;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.ProjectCalendar_ScrollDiv
+{
+    margin-bottom: 10px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: solid #66CC99;
+    border-width: 0px 0px 0px 0px;
+    padding: 0px 18px 0px 0px;
+    display: table-header-group;
+    position: relative;
+}
+
+.ProjectCalendar_ScrollDiv2
+{
+    overflow-y: visible;
+    overflow-x: visible;   
+    margin-bottom: 10px;
+    border: solid #66CC99;
+    border-width: 0px 0px 0px 0px;
+    padding: 0px 18px 0px 0px;
+    display: table-header-group;
+    position: absolute;
+    page-break-after:always;
+}
+
+.ProjectCalendar_Group
+{
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.toggleFilters
+{
+    height: 26px;
+    width: 26px;
+    display: inline-block;
+    float: right;
+}
+
+.toggleUp
+{
+    background-image: url('/Images/navigation-up-frame.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.toggleDown
+{
+    background-image: url('/Images/navigation-down-frame.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Content
+{
+    background-color: #FFFFFF;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 0px 0px 0px;
+    border-left: 1px solid #3475CD;
+    border-right: 1px solid #3475CD;
+    border-bottom: 1px solid #3475CD;
+}
+
+.divUpperFields
+{
+    width: 100%;
+    display: block;
+}
+
+.divUpperFields .label
+{
+    display: block;
+    float: left;
+    text-align: right;
+    width: 100px;
+    padding-right: 5px;
+}
+
+.divUpperFields .text
+{
+    display: inline-block;
+}

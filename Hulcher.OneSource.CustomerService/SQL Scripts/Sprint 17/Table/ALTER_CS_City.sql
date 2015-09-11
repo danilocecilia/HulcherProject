@@ -1,0 +1,3 @@
+ALTER TABLE cs_city
+ADD CSRecord bit
+CONSTRAINT DF_CS_City_CSRecord DEFAULT 0 NOT NULL

@@ -1,0 +1,4 @@
+ALTER TABLE CS_CallType ADD ShowEmployee BIT NULL
+GO
+ALTER TABLE CS_CallType ADD ShowEquipment BIT NULL
+GO

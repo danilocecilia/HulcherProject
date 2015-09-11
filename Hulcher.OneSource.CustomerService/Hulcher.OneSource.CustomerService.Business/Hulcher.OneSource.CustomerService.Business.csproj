@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A56B9ACF-2D4E-439A-818F-C89718198395}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hulcher.OneSource.CustomerService.Business</RootNamespace>
+    <AssemblyName>Hulcher.OneSource.CustomerService.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Testing|AnyCPU'">
+    <OutputPath>bin\Testing\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\Libraries\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Enterprise Library\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Enterprise Library\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Libraries\Enterprise Library\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\Libraries\Enterprise Library\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\CallCriteriaModel.cs" />
+    <Compile Include="Model\CallLogModel.cs" />
+    <Compile Include="Model\DivisionModel.cs" />
+    <Compile Include="Model\DPIModel.cs" />
+    <Compile Include="Model\EmailModel.cs" />
+    <Compile Include="Model\EmployeeModel.cs" />
+    <Compile Include="Model\CustomerModel.cs" />
+    <Compile Include="Model\EquipmentModel.cs" />
+    <Compile Include="Model\FirstAlertModel.cs" />
+    <Compile Include="Model\JobModel.cs" />
+    <Compile Include="Model\RegionModel.cs" />
+    <Compile Include="Model\ResourceAllocationModel.cs" />
+    <Compile Include="Model\SettingsModel.cs" />
+    <Compile Include="Model\SubcontractorModel.cs" />
+    <Compile Include="Presenter\AutoCompleteWebServicePresenter.cs" />
+    <Compile Include="Presenter\AutomatedDPIPresenter.cs" />
+    <Compile Include="Presenter\BasePagePresenter.cs" />
+    <Compile Include="Presenter\CallCriteriaInfoPresenter.cs" />
+    <Compile Include="Presenter\CallEntryPresenter.cs" />
+    <Compile Include="Presenter\CityMaintenancePresenter.cs" />
+    <Compile Include="Presenter\ContractDetailPresenter.cs" />
+    <Compile Include="Presenter\CustomerRequestPresenter.cs" />
+    <Compile Include="Presenter\DashboardSearchPresenter.cs" />
+    <Compile Include="Presenter\CustomerInfoPresenter.cs" />
+    <Compile Include="Model\LocationModel.cs" />
+    <Compile Include="Presenter\CustomerMaintenancePresenter.cs" />
+    <Compile Include="Presenter\DashboardPresenter.cs" />
+    <Compile Include="Presenter\DashboardPrintPresenter.cs" />
+    <Compile Include="Presenter\DefaultPagePresenter.cs" />
+    <Compile Include="Presenter\DPIReportPresenter.cs" />
+    <Compile Include="Presenter\EmailPresenter.cs" />
+    <Compile Include="Presenter\EmployeeMaintenancePresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Presenter\EquipmentRequestedPresenter.cs" />
+    <Compile Include="Presenter\EquipmentMaintenancePresenter.cs" />
+    <Compile Include="Presenter\EssentialJobDataPresenter.cs" />
+    <Compile Include="Presenter\FirstAlertPresenter.cs" />
+    <Compile Include="Presenter\FirstAlertReportPresenter.cs" />
+    <Compile Include="Presenter\JobRecordPrintPresenter.cs" />
+    <Compile Include="Presenter\JSONServicePresenter.cs" />
+    <Compile Include="Presenter\ManagersLocationPresenter.cs" />
+    <Compile Include="Presenter\MapPlottingPresenter.cs" />
+    <Compile Include="Presenter\PermittingPresenter.cs" />
+    <Compile Include="Presenter\PhoneListingPresenter.cs" />
+    <Compile Include="Presenter\ProcessDPIPresenter.cs" />
+    <Compile Include="Presenter\ProjectCalendarPresenter.cs" />
+    <Compile Include="Presenter\ProjectCalendarPrintPresenter.cs" />
+    <Compile Include="Presenter\QuickReferencePresenter.cs" />
+    <Compile Include="Presenter\RegionalMaintenancePresenter.cs" />
+    <Compile Include="Presenter\ReportMasterPagePresenter.cs" />
+    <Compile Include="Presenter\RouteMaintenancePresenter.cs" />
+    <Compile Include="Presenter\ShiftTurnOverReportPresenter.cs" />
+    <Compile Include="Presenter\ResourceAllocationPresenter.cs" />
+    <Compile Include="Presenter\JobCallLogPresenter.cs" />
+    <Compile Include="Presenter\JobDescriptionPresenter.cs" />
+    <Compile Include="Presenter\JobInfoPresenter.cs" />
+    <Compile Include="Presenter\JobRecordPresenter.cs" />
+    <Compile Include="Presenter\LocationInfoPresenter.cs" />
+    <Compile Include="Presenter\PermitInfoPresenter.cs" />
+    <Compile Include="Presenter\PhotoReportPresenter.cs" />
+    <Compile Include="Presenter\ResourceTransferPresenter.cs" />
+    <Compile Include="Presenter\SubcontractorMaintenancePresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Presenter\SamplePagePresenter.cs" />
+    <Compile Include="ViewModel\AutomatedDPIViewModel.cs" />
+    <Compile Include="ViewModel\CallCriteriaInfoViewModel.cs" />
+    <Compile Include="ViewModel\CallEntryViewModel.cs" />
+    <Compile Include="ViewModel\CityMaintenanceViewModel.cs" />
+    <Compile Include="ViewModel\ManagersLocationViewModel.cs" />
+    <Compile Include="ViewModel\PhoneListingViewModel.cs" />
+    <Compile Include="ViewModel\ProjectCalendarPrintViewModel.cs" />
+    <Compile Include="ViewModel\ProjectCalendarViewModel.cs" />
+    <Compile Include="ViewModel\RouteMaintenanceViewModel.cs" />
+    <Compile Include="ViewModel\SubContractorMaintenanceViewModel.cs" />
+    <Compile Include="ViewModel\CustomerMaintenanceViewModel.cs" />
+    <Compile Include="ViewModel\DashboardSearchViewModel.cs" />
+    <Compile Include="ViewModel\DashboardViewModel.cs" />
+    <Compile Include="ViewModel\DefaultPageViewModel.cs" />
+    <Compile Include="ViewModel\EmailViewModel.cs" />
+    <Compile Include="ViewModel\EmployeeMaintenanceViewModel.cs" />
+    <Compile Include="ViewModel\EquipmentMaintenanceViewModel.cs" />
+    <Compile Include="ViewModel\EssentialJobDataViewModel.cs" />
+    <Compile Include="ViewModel\FirstAlertViewModel.cs" />
+    <Compile Include="ViewModel\PermittingViewModel.cs" />
+    <Compile Include="ViewModel\ProcessDPIViewModel.cs" />
+    <Compile Include="ViewModel\QuickReferenceViewModel.cs" />
+    <Compile Include="ViewModel\RegionalMaintenanceViewModel.cs" />
+    <Compile Include="ViewModel\ResourceAllocationViewModel.cs" />
+    <Compile Include="ViewModel\ResourceTransferViewModel.cs" />
+    <Compile Include="WebControls\DynamicFields\Base\DynamicControls.cs" />
+    <Compile Include="WebControls\DynamicFields\Base\DynamicLabel.cs" />
+    <Compile Include="WebControls\DynamicFields\Base\Extenders.cs" />
+    <Compile Include="WebControls\DynamicFields\Base\GridViewExtenderItem.cs" />
+    <Compile Include="WebControls\DynamicFields\Base\ListExtenderItem.cs" />
+    <Compile Include="WebControls\DynamicFields\DynamicFieldsAggregator.cs" />
+    <Compile Include="WebControls\DynamicFields\Extender\AutoFillExtender.cs" />
+    <Compile Include="WebControls\DynamicFields\Extender\CascadeListExtender.cs" />
+    <Compile Include="WebControls\DynamicFields\Extender\GridViewExtender.cs" />
+    <Compile Include="WebControls\DynamicFields\Extender\ListExtender.cs" />
+    <Compile Include="WebControls\DynamicFields\Extender\ValidationExtender.cs" />
+    <Compile Include="WebControls\DynamicFields\Extender\VisibleExtender.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\AutoFillExtenderXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\CascadeListExtenderXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\DynamicRadioButtonListXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\DynamicCheckBoxXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\DynamicCountableTextBoxXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\DynamicDatePickerXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\DynamicDropDownListXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\DynamicFilteredTextBoxXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\DynamicGridViewXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\DynamicTextBoxXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\DynamicTimeXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\GridViewExtenderXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\ListExtenderXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\ValidationExtenderXml.cs" />
+    <Compile Include="WebControls\DynamicFields\Xml\VisibleExtenderXml.cs" />
+    <Compile Include="WebControls\ServerControls\CompositeBoundField.cs" />
+    <Compile Include="WebControls\ServerControls\DynamicRadioButtonList.cs" />
+    <Compile Include="WebControls\ServerControls\CountableTextBox.cs" />
+    <Compile Include="WebControls\ServerControls\DynamicCheckBox.cs" />
+    <Compile Include="WebControls\ServerControls\DynamicCountableTextBox.cs" />
+    <Compile Include="WebControls\ServerControls\DynamicDatePicker.cs" />
+    <Compile Include="WebControls\ServerControls\DynamicDropDownList.cs" />
+    <Compile Include="WebControls\ServerControls\DynamicFilteredTextBox.cs" />
+    <Compile Include="WebControls\ServerControls\DynamicGridView.cs" />
+    <Compile Include="WebControls\ServerControls\DynamicTextBox.cs" />
+    <Compile Include="WebControls\ServerControls\DynamicTime.cs" />
+    <Compile Include="WebControls\ServerControls\MultiSelectDropDownList.cs" />
+    <Compile Include="WebControls\ServerControls\ScrollableGridView.cs" />
+    <Compile Include="WebControls\Utils\DynamicFieldsParser.cs" />
+    <Compile Include="WebControls\Utils\DynamicFieldsSerialize.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.DataContext\Hulcher.OneSource.CustomerService.DataContext.csproj">
+      <Project>{3BE8A789-5B05-4BE6-BF72-1F9C3BF1E8D1}</Project>
+      <Name>Hulcher.OneSource.CustomerService.DataContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.Core\Hulcher.OneSource.CustomerService.Core.csproj">
+      <Project>{9DEF118E-D890-4218-A24C-5E954FB0CDC0}</Project>
+      <Name>Hulcher.OneSource.CustomerService.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hulcher.OneSource.CustomerService.Integration\Hulcher.OneSource.CustomerService.Integration.csproj">
+      <Project>{B0455EF8-5C57-4C0C-A1F8-5825C5CC8058}</Project>
+      <Name>Hulcher.OneSource.CustomerService.Integration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppdef Include="Workflows\JobLifecycle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppdef>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
