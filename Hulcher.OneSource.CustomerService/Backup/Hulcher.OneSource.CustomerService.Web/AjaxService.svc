@@ -1,1 +1,0 @@
-﻿<%@ServiceHost    language="C#"    debug="true"    Service="Hulcher.OneSource.CustomerService.Web.WebService.JSONService"    Factory="System.ServiceModel.Activation.WebScriptServiceHostFactory" %>
